@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+    "tx_id": 1,
+    "username": "admin",
+    "status": "done",
+    "contract": "adddemo",
+    "from": "1",
+    "to": "2",
+      "type": "直连"
+  },
+    {
+      "tx_id": 2,
+      "username": "admin",
+      "status": "done",
+      "contract": "adddemo",
+      "from": "2",
+      "to": "1",
+      "type": "直连"
+    },
+    {
+      "tx_id": 3,
+      "username": "admin",
+      "status": "done",
+      "contract": "adddemo",
+      "from": "1",
+      "to": "2",
+      "type": "中继"
+    },
+    {
+      "tx_id": 4,
+      "username": "admin",
+      "status": "done",
+      "contract": "adddemo",
+      "from": "2",
+      "to": "1",
+      "type": "中继"
+    },
+    {
+      "tx_id": 5,
+      "username": "admin",
+      "status": "done",
+      "contract": "adddemo",
+      "from": "1",
+      "to": "3",
+      "type": "直连"
+    },
+    {
+      "tx_id": 6,
+      "username": "admin",
+      "status": "undone",
+      "contract": "adddemo",
+      "from": "1",
+      "to": "3",
+      "type": "中继"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "header": {
+    "tx_id": 1,
+    "username": "admin",
+    "status": "done",
+    "contract": "adddemo",
+    "from": "1",
+    "to": "2",
+    "type": "直连",
+    "parameter": "11"
+  },
+  "transactions": []
+}
