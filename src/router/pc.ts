@@ -39,7 +39,7 @@ export const routes = [
     },
     {
         path: '/login',
-        component: () => import("@/pages/pc/Login/ListIndex.vue"),
+        component: () => import("@/pages/pc/Login/Index.vue"),
         props: true
     },
     {
