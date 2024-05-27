@@ -38,7 +38,13 @@ export default defineComponent({
   methods: {
     gotocrosschain() {
       this.$router.push('/crosschain');
+    },
+
+    gotdasbchain() {
+      this.$router.push('/AllChain');
     }
+
+
   }
 });
 </script>
@@ -53,8 +59,10 @@ export default defineComponent({
         <div class="left">
             <h1>{{ en }}</h1>
             <h2>{{ title }}</h2>
-            <div class="desc"> {{ intro }} </div>
-          <Choose></Choose>>
+          <div>点击此处前往单链页面：
+            <el-button @click="gotdasbchain">跳转</el-button>
+            <!-- <Search :placeholder="placeholder1"></Search>-->
+          </div>
           <div>点击此处前往跨链页面：
           <el-button @click="gotocrosschain">跳转</el-button>
            <!-- <Search :placeholder="placeholder1"></Search>-->

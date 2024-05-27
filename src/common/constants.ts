@@ -6,7 +6,7 @@ export const UNKNOWN_ERROR_MSG = '未知错误，请重试';
 export const REQUEST_BASE_URL = import.meta.env.MODE === 'development'? '/dev/': '/';
 
 /**简介 */
-export const KCHAIN = 'CROSSChain111';
+export const KCHAIN = 'H2Cross';
 export const KCHAIN_TITLE = '跨链管理平台'
 export const KCHAIN_INTRO = '\
     通过跨链可视化管理降低跨链机制的复杂性，并将其显著展示出来 \
