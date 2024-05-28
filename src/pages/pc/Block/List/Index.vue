@@ -1,5 +1,5 @@
 <template>
-  <Title title="区块列表" />
+  <Title title="长安链详情" />
    <Search :placeholder="placeholder1"></Search>
   <BlockTable :data="data"></BlockTable>
 </template>
