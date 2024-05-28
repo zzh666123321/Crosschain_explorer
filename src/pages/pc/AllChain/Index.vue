@@ -1,28 +1,23 @@
 <template>
-  <el-radio-group v-model="size">
-    <el-radio label="">默认</el-radio>
-    <el-radio label="medium">中等</el-radio>
-    <el-radio label="small">小型</el-radio>
-    <el-radio label="mini">超小</el-radio>
-  </el-radio-group>
 
-  <el-descriptions class="margin-top" title="带边框列表" :column="3" :size="size" border>
+
+  <el-descriptions class="margin-top" title="全部的链" :column="3" :size="size" border>
     <template slot="extra">
       <el-button type="primary" size="small">操作</el-button>
     </template>
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-user"></i>
-        链的种类
+        链号
       </template>
-      长安链
+      01
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-mobile-phone"></i>
-        链号
+        链的种类
       </template>
-      01
+      长安链
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -30,21 +25,21 @@
         IP号与端口号
       </template>
       127.0.0.1 ：8081
-        <el-button @click="gotdasbchain">跳转</el-button>
+        <el-button @click="gotchainmaker">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-user"></i>
-        链的种类
+        链号
       </template>
-      长安链
+      02
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-mobile-phone"></i>
-        链号
+        链的种类
       </template>
-      02
+      长安链
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -52,22 +47,22 @@
         IP号与端口号
       </template>
       127.0.0.1 ：8082
-      <el-button @click="gotdasbchain">跳转</el-button>
+      <el-button @click="gotchainmaker">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-user"></i>
-        链的种类
+        链号
       </template>
-      长安链
+      03
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-mobile-phone"></i>
-        链号
+        链的种类
       </template>
-      03
+      长安链
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -75,22 +70,22 @@
         IP号与端口号
       </template>
       127.0.0.1 ：8083
-      <el-button @click="gotdasbchain">跳转</el-button>
+      <el-button @click="gotchainmaker">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-user"></i>
-        链的种类
+        链号
       </template>
-      长安链
+      04
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-mobile-phone"></i>
-        链号
+        链的种类
       </template>
-      04
+      长安链
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -98,7 +93,7 @@
         IP号与端口号
       </template>
       127.0.0.1 ：8084
-      <el-button @click="gotdasbchain">跳转</el-button>
+      <el-button @click="gotchainmaker">跳转</el-button>
     </el-descriptions-item>
 
   </el-descriptions>
@@ -112,19 +107,19 @@ export default {
     return {
       size: ''
     };
+  },
+
+  methods: {
+    gotchainmaker() {
+      this.$router.push('/ChainMakerblocks');
+    },
+
+    gotdasbchain() {
+      this.$router.push('/AllChain');
+    }
+
+
   }
-
-  // methods: {
-  //   gotocrosschain() {
-  //     this.$router.push('/crosschain');
-  //   },
-  //
-  //   gotdasbchain() {
-  //     this.$router.push('/AllChain');
-  //   }
-  //
-
-  //}
 
 }
 </script>

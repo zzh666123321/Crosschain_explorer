@@ -18,7 +18,7 @@ export const routes = [
         component: () => import("@/pages/pc/Transaction/List/Index.vue")
     },
     {
-        path: '/blocks',name:'blocks',
+        path: '/ChainMakerblocks',name:'ChainMakerblocks',
         component: () => import("@/pages/pc/Block/List/Index.vue")
     },
     {
