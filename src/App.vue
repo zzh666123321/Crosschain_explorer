@@ -1,5 +1,5 @@
 <template>
-  <PC v-if="isPC"></PC>
+  <PC v-if="isPC">312132</PC>
   <Mobile v-else></Mobile>
 </template>
 
@@ -9,7 +9,7 @@ import Mobile from "@/pages/mobile/Index.vue";
 import { initRoutes } from "@/router"
 
 const isPC = window.innerWidth >= 720;
-initRoutes(isPC)
+initRoutes(isPC)    
 </script>
 
 <style>
