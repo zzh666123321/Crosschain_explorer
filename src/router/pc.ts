@@ -22,6 +22,14 @@ export const routes = [
         component: () => import("@/pages/pc/Block/List/Index.vue")
     },
     {
+        path: '/Ethblocks',name:'Ethblocks',
+        component: () => import("@/pages/pc/EthBlock/List/Index.vue")
+    },
+    {
+        path: '/H2Chainblocks',name:'H2Chainblocks',
+        component: () => import("@/pages/pc/H2ChainBlock/List/Index.vue")
+    },
+    {
         path: '/transaction/:hash',
         component: () => import("@/pages/pc/Transaction/Detail/Index.vue"),
         props: true
