@@ -26,6 +26,10 @@ export const routes = [
         component: () => import("@/pages/pc/EthBlock/List/Index.vue")
     },
     {
+        path: '/broken',name:'broken',
+        component: () => import("@/pages/pc/broken/Index.vue")
+    },
+    {
         path: '/H2Chainblocks',name:'H2Chainblocks',
         component: () => import("@/pages/pc/H2ChainBlock/List/Index.vue")
     },
