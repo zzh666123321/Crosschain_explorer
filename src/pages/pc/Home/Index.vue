@@ -66,7 +66,7 @@ export default defineComponent({
             <!-- <Search :placeholder="placeholder1"></Search>-->
           </div>
           <div>点击此处前往跨链页面：
-          <el-button @click="gotbroken">跳转</el-button>
+          <el-button @click="gotocrosschain">跳转</el-button>
            <!-- <Search :placeholder="placeholder1"></Search>-->
           </div>
         </div>

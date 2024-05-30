@@ -1,54 +1,4 @@
-<template>
-  <div>
-    <el-button type="primary" @click="showPopup">点击此处发起跨链操作</el-button>
-    <transition name="popup-fade">
-      <div v-if="isPopupVisible" class="popup" @keydown.esc="hidePopup" tabindex="0">
-        <div class="popup-content">
-          <h2>跨链操作页</h2>
-          <p>请选择来源链，目的链与跨链方式</p>
-          <div class="select-container">
-            <label for="startChainID">起始链ID:</label>
-            <el-select v-model="selectedStartChainID" id="startChainID" placeholder="选择起始链ID">
-              <el-option
-                  v-for="chainID in chainIDs"
-                  :key="chainID"
-                  :value="chainID"
-                  :label="chainID"
-              ></el-option>
-            </el-select>
-          </div>
-          <div class="select-container">
-            <label for="targetChainID">目标链ID:</label>
-            <el-select v-model="selectedTargetChainID" id="targetChainID" placeholder="选择目标链ID">
-              <el-option
-                  v-for="chainID in chainIDs"
-                  :key="chainID"
-                  :value="chainID"
-                  :label="chainID"
-              ></el-option>
-            </el-select>
-          </div>
-          <div class="select-container">
-            <label for="selectedOption">跨链方式:</label>
-            <el-select v-model="selectedOption" id="selectedOption" placeholder="选择选项">
-              <el-option label="直连" value='A'></el-option>
-              <el-option label="中继" value='B'></el-option>
-            </el-select>
-          </div>
-          <div class="select-container">
-            <label for="selectedContract">选择合约:</label>
-            <el-select v-model="selectedContract" id="selectedContract" placeholder="选择合约">
-              <el-option label="合约1" value='1'></el-option>
-              <el-option label="合约2" value='2'></el-option>
-            </el-select>
-          </div>
-          <el-button type="primary" @click="execute">执行</el-button>
-          <button @click="hidePopup">关闭</button>
-        </div>
-      </div>
-    </transition>
-  </div>
-</template>
+
 
 <script>
 import { ElButton, ElSelect } from 'element-plus';
@@ -90,8 +40,6 @@ export default {
 
     };
 
-
-
     return {
       isPopupVisible,
       selectedStartChainID,
@@ -104,8 +52,24 @@ export default {
       execute,
     };
   },
+  methods: {
+    gotbroken(){
+      this.$router.push('/broken');
+    }
+
+  },
 };
+
+
+
 </script>
+
+
+<template>
+  <div>
+    <el-button @click="gotbroken()">发起跨链交易</el-button>
+  </div>
+</template>
 
 <style>
 .primary:focus,

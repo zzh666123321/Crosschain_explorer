@@ -7,14 +7,14 @@
     <div v-show="active == 1">请您选择想要调用的合约与函数</div>
     <div v-show="active == 2">请您选择填写函数的参数</div>
     <div v-show="active == 3">请您耐心等待跨链交易</div>
-
+    <div> {{ JSON.stringify(resource)}} </div>
   </div>
   <div v-show="active == 0"> 请您选择源链类型
-    <el-cascader-panel :options="options"></el-cascader-panel>
+    <el-cascader-panel :options="options"  v-model="resource"></el-cascader-panel>
   </div>
 
   <div v-show="active == 0"> 请您选择目的链类型
-    <el-cascader-panel :options="options"></el-cascader-panel>
+    <el-cascader-panel :options="options" v-model="target"></el-cascader-panel>
   </div>
 
   <div v-show="active == 1">
@@ -37,7 +37,12 @@
 
 <script setup>
 import { ref, reactive, toRefs, computed } from "vue";
+import { useRouter} from 'vue-router'
+const router = useRouter()
 const active = ref(0);
+
+const resource = ref('')
+const target = ref('')
 const stepData = reactive({
   stepSuc: [0],
   stepTitle: ["第一步", "第二步","第三步"]
@@ -52,15 +57,18 @@ let stepClassObj = computed((val) => {
 });
 const { stepTitle, stepSuc } = toRefs(stepData);
 const stepSubmitHandle = () => {
-  if (++active.value > 3) active.value = 0;
-  // ++active.value;
+  console.log(resource.value)
+  if (++active.value > 3) {
+    active.value=3;
+    // console.log(this.value)
+    router.push('/crossend');
+  }
+
 };
 const gobackHandle = () => {
   if (--active.value <0) active.value = 0;
   // ++active.value;
 };
-
-
 
 </script>
 <script>
