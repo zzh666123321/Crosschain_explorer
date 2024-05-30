@@ -7,7 +7,7 @@
     <div v-show="active == 1">请您选择想要调用的合约与函数</div>
     <div v-show="active == 2">请您选择填写函数的参数</div>
     <div v-show="active == 3">请您耐心等待跨链交易</div>
-    <div> {{ JSON.stringify(resource)}} </div>
+
   </div>
   <div v-show="active == 0"> 请您选择源链类型
     <el-cascader-panel :options="options"  v-model="resource"></el-cascader-panel>
@@ -18,7 +18,7 @@
   </div>
 
   <div v-show="active == 1">
-    <el-cascader-panel :options="con"></el-cascader-panel>
+    <el-cascader-panel :options="con" v-model="contract"></el-cascader-panel>
   </div>
 
   <div v-show="active == 2">
@@ -28,6 +28,33 @@
         clearable>
     </el-input>
   </div>
+
+
+
+
+  <div>
+    您所选择的源链是：{{ JSON.stringify(resource)}}
+  </div>
+  <div>
+    您所选择的目的链是：{{ JSON.stringify(target)}}
+  </div>
+  <div>
+    您所选择的合约是：{{ JSON.stringify(contract)}}
+  </div>
+
+
+  <div v-show="active == 3">
+    <el-button
+        type="primary"
+        @click="openFullScreen1"
+        class="btn_s"
+        v-loading.fullscreen.lock="fullscreenLoading">
+      确认提交
+    </el-button>
+  </div>
+
+
+
   <div class="btn">
     <el-button type="primary" @click="gobackHandle()" class="btn_s">上一步</el-button>
     <el-button type="primary" @click="stepSubmitHandle()" class="btn_s">下一步</el-button>
@@ -43,6 +70,7 @@ const active = ref(0);
 
 const resource = ref('')
 const target = ref('')
+const contract = ref('')
 const stepData = reactive({
   stepSuc: [0],
   stepTitle: ["第一步", "第二步","第三步"]
@@ -59,9 +87,8 @@ const { stepTitle, stepSuc } = toRefs(stepData);
 const stepSubmitHandle = () => {
   console.log(resource.value)
   if (++active.value > 3) {
-    active.value=3;
     // console.log(this.value)
-    router.push('/crossend');
+    //router.push('/crossend');
   }
 
 };
@@ -76,8 +103,29 @@ const gobackHandle = () => {
 
 export default {
 
+  methods: {
+    openFullScreen1() {
+      this.fullscreenLoading = true;
+      setTimeout(() => {
+        this.fullscreenLoading = false;
+      }, 20000);
+    },
+    openFullScreen2() {
+      const loading = this.$loading({
+        lock: true,
+        text: 'Loading',
+        spinner: 'el-icon-loading',
+        background: 'rgba(0, 0, 0, 0.7)'
+      });
+      setTimeout(() => {
+        loading.close();
+      }, 2000);
+    }
+  },
+
   data() {
     return {
+      fullscreenLoading: false,
       input: '',
       con: [{
         value: 'zhinan',
