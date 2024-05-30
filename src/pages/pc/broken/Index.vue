@@ -4,10 +4,9 @@
       <el-step v-for="(item, index) of stepTitle" :key="index" :title="item" :class="stepClassObj(index)" />
     </el-steps>
     <div v-show="active == 0">请您选择选择源链和目标链</div>
-    <div v-show="active == 1">请您选择想要调用的合约</div>
-    <div v-show="active == 2">请您选择想要调用的函数</div>
-    <div v-show="active == 3">请您选择填写函数的参数</div>
-    <div v-show="active == 4">请您耐心等待跨链交易</div>
+    <div v-show="active == 1">请您选择想要调用的合约与函数</div>
+    <div v-show="active == 2">请您选择填写函数的参数</div>
+    <div v-show="active == 3">请您耐心等待跨链交易</div>
 
   </div>
   <div v-show="active == 0"> 请您选择源链类型
@@ -18,8 +17,17 @@
     <el-cascader-panel :options="options"></el-cascader-panel>
   </div>
 
+  <div v-show="active == 1">
+    <el-cascader-panel :options="con"></el-cascader-panel>
+  </div>
 
-
+  <div v-show="active == 2">
+    <el-input
+        placeholder="请输入内容"
+        v-model="input"
+        clearable>
+    </el-input>
+  </div>
   <div class="btn">
     <el-button type="primary" @click="gobackHandle()" class="btn_s">上一步</el-button>
     <el-button type="primary" @click="stepSubmitHandle()" class="btn_s">下一步</el-button>
@@ -32,7 +40,7 @@ import { ref, reactive, toRefs, computed } from "vue";
 const active = ref(0);
 const stepData = reactive({
   stepSuc: [0],
-  stepTitle: ["第一步", "第二步","第三步","第四步"]
+  stepTitle: ["第一步", "第二步","第三步"]
 });
 let stepClassObj = computed((val) => {
   return (val) => {
@@ -44,7 +52,7 @@ let stepClassObj = computed((val) => {
 });
 const { stepTitle, stepSuc } = toRefs(stepData);
 const stepSubmitHandle = () => {
-  if (++active.value > 4) active.value = 0;
+  if (++active.value > 3) active.value = 0;
   // ++active.value;
 };
 const gobackHandle = () => {
@@ -56,9 +64,52 @@ const gobackHandle = () => {
 
 </script>
 <script>
+
+
 export default {
+
   data() {
     return {
+      input: '',
+      con: [{
+        value: 'zhinan',
+        label: 'SafeMath',
+        children: [{
+          value: 'sheji',
+          label: 'add',
+        },{
+          value: 'sheji',
+          label: 'sub',
+        },{
+          value: 'sheji',
+          label: 'mult',
+        },{
+          value: 'sheji',
+          label: 'div',
+        },{
+          value: 'sheji',
+          label: 'abs',
+        },{
+          value: 'sheji',
+          label: 'mod',
+        }
+        ]
+      },  {
+        value: 'ziyuan',
+        label: 'BeefKing',
+        children: [{
+          value: 'axure',
+          label: 'Set'
+        }, {
+          value: 'sketch',
+          label: 'Get'
+        }, {
+          value: 'jiaohu',
+          label: 'ShowAll'
+        }]
+      }],
+
+
       options: [{
         value: 'chainmaker',
         label: '长安链',
