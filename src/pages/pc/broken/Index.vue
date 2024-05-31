@@ -29,6 +29,10 @@
     </el-input>
   </div>
 
+  <div v-show="active == 3">
+    <el-button type="primary" @click="gotback()" class="btn_s">下一步</el-button>
+  </div>
+
 
 
 
@@ -58,6 +62,7 @@
   <div class="btn">
     <el-button type="primary" @click="gobackHandle()" class="btn_s">上一步</el-button>
     <el-button type="primary" @click="stepSubmitHandle()" class="btn_s">下一步</el-button>
+
   </div>
 
 </template>
@@ -101,14 +106,22 @@ const gobackHandle = () => {
 <script>
 
 
+import {useRouter} from "vue-router";
+
 export default {
 
   methods: {
+    gotback(){
+      this.$router.push('/crossTX');
+    },
+
     openFullScreen1() {
+
       this.fullscreenLoading = true;
       setTimeout(() => {
         this.fullscreenLoading = false;
-      }, 20000);
+      }, 10000);
+
     },
     openFullScreen2() {
       const loading = this.$loading({
@@ -117,9 +130,12 @@ export default {
         spinner: 'el-icon-loading',
         background: 'rgba(0, 0, 0, 0.7)'
       });
+
       setTimeout(() => {
         loading.close();
-      }, 2000);
+      }, 10000);
+
+
     }
   },
 
