@@ -1,7 +1,7 @@
 <template>
   <Title title="海河智链详情" />
    <Search :placeholder="placeholder1"></Search>
-  <BlockTable :data="data"></BlockTable>
+  <BlockTable :from = "from" :data="data"></BlockTable>
 </template>
 
 <script lang="ts" setup>
@@ -19,6 +19,7 @@ const params = reactive({
 });
 
 const { data, error } = useBlockList(params);
+const from = "h2block"
 </script>
 
 <style scoped></style>

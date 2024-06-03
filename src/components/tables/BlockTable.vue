@@ -2,7 +2,7 @@
     <a-table :columns="columns" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
         <template #bodyCell="{ column, text }">
             <template v-if="column.dataIndex === 'id'">
-                <router-link :to="'/block/' + text">{{ text }}</router-link>
+                <router-link :to="`/${from}/${text}`">{{ text }}</router-link>
             </template>
             <template v-if="column.dataIndex === 'miner'">
                 <router-link :to="'/address/' + text">{{ text }}</router-link>
@@ -14,8 +14,9 @@
 <script setup lang="ts">
 import { columns } from "@/models/block";
 import { PropType } from "vue";
-
 defineProps({
-    data: Array as PropType<any[] | null>
+    data: Array as PropType<any[] | null>,
+    from: String
 })
+
 </script>

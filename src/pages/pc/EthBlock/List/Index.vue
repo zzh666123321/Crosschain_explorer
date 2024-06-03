@@ -1,7 +1,7 @@
 <template>
   <Title title="以太坊详情" />
   <Search :placeholder="placeholder1"></Search>
-  <BlockTable :data="data"></BlockTable>
+  <BlockTable :from="from" :data="data"></BlockTable>
 </template>
 
 <script lang="ts" setup>
@@ -17,7 +17,7 @@ const params = reactive({
   limit: 10,
   offset: 0,
 });
-
+const from = 'ethBlock'
 const { data, error } = useBlockList(params);
 </script>
 

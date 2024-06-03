@@ -42,6 +42,16 @@ export const routes = [
         props: true
     },
     {
+        path: '/ethblock/:height',
+        component: () => import("@/pages/pc/EthBlock/Detail/Index.vue"),
+        props: true
+    },
+    {
+        path: '/h2block/:height',
+        component: () => import("@/pages/pc/H2ChainBlock/Detail/Index.vue"),
+        props: true
+    },
+    {
         path: '/address/:address',
         component: () => import("@/pages/pc/Address/Index.vue"),
         props: true
