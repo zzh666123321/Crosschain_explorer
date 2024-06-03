@@ -1357,7 +1357,7 @@ export default {
   methods: {
     gotchainmaker() {
       this.$router.push('/ChainMakerblocks');
-      this.$router.push({path: "dafdsfas",});
+      // this.$router.push({path: "dafdsfas",});
     },
 
     gotEthchain() {
