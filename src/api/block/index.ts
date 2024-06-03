@@ -29,3 +29,13 @@ export function detail(data: API.BlockDetailParams) {
         }
     );
 }
+
+// export function getDetail(id:number) {
+//     return request({
+//         url: '/block/detail/id',
+//         method: 'post',
+//         data: {
+//             id
+//         }
+//     })
+// }
