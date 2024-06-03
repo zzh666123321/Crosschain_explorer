@@ -5,11 +5,8 @@
 
 export const columns = [
     { title: '高度', dataIndex: 'id', width: 100 },
+    { title: 'hash值', dataIndex: 'transaction_count', width: 80 },
     { title: '出块时间', dataIndex: 'time', width: 180 },
-    { title: '交易数量', dataIndex: 'transaction_count', width: 80 },
-    { title: '调用数量', dataIndex: 'call_count', width: 80 },
-    { title: '矿工', dataIndex: 'miner', ellipsis: true },
-    { title: '奖励 / Gas', dataIndex: 'reward', width: 180 },
-    { title: '消耗 / Gas', dataIndex: 'gas_used', width: 100 },
-    { title: '上限 / Gas', dataIndex: 'gas_limit', width: 120, align: 'right' },
+    { title: 'DagHash', dataIndex: 'call_count', width: 80 },
+    { title: 'txRoot', dataIndex: 'miner', ellipsis: true }
 ];
