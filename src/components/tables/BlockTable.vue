@@ -16,7 +16,7 @@ import { columns } from "@/models/block";
 import { PropType } from "vue";
 defineProps({
     data: Array as PropType<any[] | null>,
-    from: String
+    from: String,
 })
 
 </script>

@@ -1,7 +1,7 @@
 <template>
   <Title title="长安链详情" />
    <Search :placeholder="placeholder1"></Search>
-  <BlockTable :from="from" :data="data"></BlockTable>
+  <BlockTable :type="type" :from="from" :data="data"></BlockTable>
 </template>
 
 <script lang="ts" setup>
@@ -11,7 +11,9 @@ import Title from "@/components/Title.vue";
 import { reactive } from "vue";
 import Search from "@/pages/pc/Home/Search/Index.vue";
 import {CHOOSE_PLACE_HOLDER} from "@/common/constants";
+import {columns} from "@/models/block";
 const from = 'block'
+const type = "columns"
 // router.push({
 //   path: "/",
 //   params: {

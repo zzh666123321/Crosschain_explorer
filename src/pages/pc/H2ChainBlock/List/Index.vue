@@ -1,7 +1,7 @@
 <template>
   <Title title="海河智链详情" />
    <Search :placeholder="placeholder1"></Search>
-  <BlockTable :from = "from" :data="data"></BlockTable>
+  <BlockTable :type="columns" :from = "from" :data="data"></BlockTable>
 </template>
 
 <script lang="ts" setup>
@@ -11,6 +11,7 @@ import Title from "@/components/Title.vue";
 import { reactive } from "vue";
 import Search from "@/pages/pc/Home/Search/Index.vue";
 import {CHOOSE_PLACE_HOLDER} from "@/common/constants";
+import {columns} from "@/models/block";
 const placeholder1=CHOOSE_PLACE_HOLDER;
 const params = reactive({
   s: "id(desc)",
