@@ -1,5 +1,5 @@
 <template>
-    <Title title="区块详情"></Title>
+    <Title title="长安链区块详情"></Title>
     <div>
         <Item title="txHash">{{ height }}</Item>
         <Item title="blockHash">{{ data?.header.hash }}</Item>
