@@ -1,23 +1,17 @@
 <template>
-    <Title title="区块详情"></Title>
+    <Title title="以太坊区块详情"></Title>
     <div>
-        <Item title="区块高度">{{ height }}</Item>
-        <Item title="哈希">{{ data?.header.hash }}</Item>
-        <Item title="出块时间">{{ data?.header.timestamp }}</Item>
-        <Item title="矿工">
-            <router-link :to="'/address/' + data?.header.miner">
-                {{ data?.header.miner }}
-            </router-link>
-        </Item>
-        <Item title="奖励">{{ data?.header.blockReward }}</Item>
-        <Item title="交易数量">{{ data?.header.transactionCount }}</Item>
-        <Item title="难度">{{ data?.header.difficulty }}</Item>
-        <Item title="总难度">{{ data?.header.totalDifficulty }}</Item>
-        <Item title="大小">{{ data?.header.size }}</Item>
-        <Item title="状态哈希">{{ data?.header.stateRoot }}</Item>
-        <Item title="父区块哈希">{{ data?.header.parentHash }}</Item>
-        <Item title="Gas 上限">{{ data?.header.gasLimit }}</Item>
-        <Item title="Gas 消耗">{{ data?.header.gasUsed }}</Item>
+        <Item title="timestamp">{{ height }}</Item>
+        <Item title="blockSize">{{ data?.header.hash }}</Item>
+        <Item title="previousBlockAddress">{{ data?.header.timestamp }}</Item>
+
+      <Item title="gaslimit">{{ data?.header.blockReward }}</Item>
+        <Item title="gasUsed">{{ data?.header.blockReward }}</Item>
+        <Item title="stateRoot">{{ data?.header.transactionCount }}</Item>
+        <Item title="totalDifficulty ">{{ data?.header.difficulty }}</Item>
+        <Item title="blockReward">{{ data?.header.totalDifficulty }}</Item>
+        <Item title="minerAddress">{{ data?.header.size }}</Item>
+        <Item title="transactionCount">{{ data?.header.stateRoot }}</Item>
     </div>
     <!-- <a-divider />
     <h2>交易列表</h2>
