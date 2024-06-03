@@ -45,7 +45,9 @@
   <div>
     您所选择的合约是：{{ JSON.stringify(contract)}}
   </div>
-
+  <div>
+    您所选择的参数是：{{ JSON.stringify(input)}}
+  </div>
 
   <div v-show="active == 3">
     <el-button
