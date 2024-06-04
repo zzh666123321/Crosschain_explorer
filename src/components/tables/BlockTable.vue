@@ -1,7 +1,7 @@
 <template>
     <a-table :columns="columns" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
         <template #bodyCell="{ column, text }">
-            <template v-if="column.dataIndex === 'id'">
+            <template v-if="column.dataIndex === 'blockHeight'">
                 <router-link :to="`/${from}/${text}`">{{ text }}</router-link>
             </template>
             <template v-if="column.dataIndex === 'miner'">

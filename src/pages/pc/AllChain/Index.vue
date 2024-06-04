@@ -873,7 +873,6 @@
       </template>
       127.0.0.1:8039
         <el-button @click="gotchainmaker('127.0.0.1:8039')">跳转</el-button>
-      <el-button @click="gotEthchain">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1357,6 +1356,9 @@ export default {
 
   methods: {
     gotchainmaker(chainIP) {
+      
+
+      this.$router.push({path:'/ChainMakerblocks',query: {chainIP: chainIP}});
       console.log(chainIP)
       // this.$router.push('/ChainMakerblocks');
       // this.$router.push({path: "dafdsfas",});
@@ -1366,11 +1368,11 @@ export default {
     },
 
     gotEthchain(chainIP) {
-      this.$router.push('/Ethblocks');
+      this.$router.push({path:'/Ethblocks',query: {chainIP: chainIP}});
       console.log(chainIP)
     },
     gotH2Chain(chainIP) {
-      this.$router.push('/H2Chainblocks');
+      this.$router.push( {path:'/H2Chainblocks',query: {chainIP: chainIP}});
       console.log(chainIP)
     }
 

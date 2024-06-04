@@ -4,6 +4,7 @@ import { wrapResponse } from "@/api/request";
 
 import txs from '@/mock/transactions.json'
 import blks from '@/mock/blocks.json'
+import blks1 from '@/mock/block1.json'
 import address from '@/mock/address.json'
 import block from '@/mock/block.json'
 
@@ -24,6 +25,15 @@ export const useTransactionDetail = useFetchFactory<API.TransactionDetailParams,
 export const useBlockList = useFetchFactory<API.BlockListParams, typeof blks.data>(
     () => {
         const data = shuffle<typeof blks.data[0]>(blks.data);
+        return Promise.resolve(wrapResponse(data));
+    }
+)
+
+
+
+export const useBlockList1 = useFetchFactory<API.BlockListParams, typeof blks1.data.tenBlocksInfo>(
+    () => {
+        const data = shuffle<typeof blks1.data.tenBlocksInfo[0]>(blks1.data.tenBlocksInfo);
         return Promise.resolve(wrapResponse(data));
     }
 )

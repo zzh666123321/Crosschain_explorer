@@ -31,8 +31,6 @@ export function detail(data: API.BlockDetailParams) {
 }
 
 
-
-
 export function sendPostRequest(chainIp: string) {
     return request<API.BlockDetailResponse>({
         url: '/supply/chain/checkNewblock',
@@ -45,7 +43,12 @@ export function sendPostRequest(chainIp: string) {
     })
 }
 
-export const useTransactionList = useFetchFactory<string, API.BlockDetailResponse>(sendPostRequest)
+export function getBlockDetail(chainIP: string){
+    return sendPostRequest(chainIP)
+}
+
+
+
 // 定义函数发送请求并处理响应
 // export function sendPostRequest(chainIP: string,) {
 //     fetch('http://localhost:8080/supply/chain/checkNewblock/', {

@@ -16,11 +16,11 @@ export const routes = [
         component: () => import("@/pages/pc/Transaction/List/Index.vue")
     },
     {
-        path: '/ChainMakerblocks',name:'ChainMakerblocks',
+        path: '/ChainMakerblocks',
         component: () => import("@/pages/pc/Block/List/Index.vue")
     },
     {
-        path: '/Ethblocks',name:'Ethblocks',
+        path: '/Ethblocks',
         component: () => import("@/pages/pc/EthBlock/List/Index.vue")
     },
     {
@@ -28,7 +28,7 @@ export const routes = [
         component: () => import("@/pages/pc/broken/Index.vue")
     },
     {
-        path: '/H2Chainblocks',name:'H2Chainblocks',
+        path: '/H2Chainblocks',
         component: () => import("@/pages/pc/H2ChainBlock/List/Index.vue")
     },
     {
