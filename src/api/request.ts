@@ -6,7 +6,7 @@ import { UNKNOWN_ERROR_MSG, REQUEST_BASE_URL } from "@/common/constants";
 // 创建 axios 实例
 const service = axios.create({
   baseURL: REQUEST_BASE_URL,
-  timeout: 6000,
+  timeout: 600000,  //超时时间
 });
 
 service.interceptors.request.use(

@@ -28,6 +28,7 @@ export const useBlockList = useFetchFactory<API.BlockListParams, typeof blks.dat
     }
 )
 
+
 export const useBlockDetail = useFetchFactory<API.BlockDetailParams, typeof block>(
     () => {
         const data = block

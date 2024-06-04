@@ -1358,6 +1358,9 @@ export default {
     gotchainmaker() {
       this.$router.push('/ChainMakerblocks');
       // this.$router.push({path: "dafdsfas",});
+      // 带查询参数，变成 /register?plan=private
+      // this.$router.push({ path: '/ChainMakerblocks'})
+      // this.$router.push({ path: '/ChainMakerblocks', query: { chainIP: 'ChainMaker' }})
     },
 
     gotEthchain() {
