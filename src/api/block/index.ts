@@ -37,8 +37,7 @@ export function sendPostRequest(chainIp: string) {
         method: 'post',
         // data: { chainIp }
         data: {
-            "blockHEIGHT": "3",
-            "chainIP": "116.204.36.31:1000"
+            chainIp: chainIp
         }
     })
 }

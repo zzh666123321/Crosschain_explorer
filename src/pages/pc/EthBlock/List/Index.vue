@@ -12,14 +12,37 @@ import { reactive } from "vue";
 import Search from "@/pages/pc/Home/Search/Index.vue";
 import {CHOOSE_PLACE_HOLDER} from "@/common/constants";
 import {columns} from "@/models/block";
+import {getBlockDetail} from "@/api/block";
+import { useBlockList1 } from "@/composition/useMock";
+import { useRouter, useRoute} from 'vue-router'
+
+const router = useRouter()
+const route = useRoute()
+
 const placeholder1=CHOOSE_PLACE_HOLDER;
 const params = reactive({
   s: "id(desc)",
   limit: 10,
   offset: 0,
 });
+
+
 const from = 'ethBlock'
-const { data, error } = useBlockList(params);
+// const { data, error } = useBlockList(params);
+const { data, error } = useBlockList1(params);
+
+
+const data1 = route.query
+console.log(data1)
+
+
+console.log(data)
+console.log(typeof data)
+
+const datadata = getBlockDetail(String(data1))
+console.log(datadata)
+
+
 </script>
 
 <style scoped></style>
