@@ -1,18 +1,16 @@
 <template>
     <Title title="海河智链区块详情"></Title>
     <div>
-        <Item title="blockHeight">{{ height }}</Item>
-        <Item title="blockHash">{{ data?.header.hash }}</Item>
-        <Item title="timeStamp">{{ data?.header.timestamp }}</Item>
-
-
-        <Item title="blockSize">{{ data?.header.blockReward }}</Item>
-        <Item title="transactionCount">{{ data?.header.transactionCount }}</Item>
-        <Item title="previousBlockHash">{{ data?.header.difficulty }}</Item>
-        <Item title="merkleTreeRootOfWorldState">{{ data?.header.totalDifficulty }}</Item>
-        <Item title="merkleTreeRootOfTransactions">{{ data?.header.size }}</Item>
-        <Item title="merkleTreeRootOfTransactionState">{{ data?.header.stateRoot }}</Item>
-        <Item title="signerPubkey">{{ data?.header.parentHash }}</Item>
+        <Item title="区块高度">{{ height }}</Item>
+        <Item title="timeStamp">{{ data?.data.timeStamp }}</Item>
+        <Item title="merkleTreeRootOfTransactionState">{{ data?.data.merkleTreeRootOfTransactionState }}</Item>
+        <Item title="blockHash">{{ data?.data.blockHash }}</Item>
+        <Item title="previousBlockHash">{{ data?.data.previousBlockHash }}</Item>
+        <Item title="signerPubkey">{{ data?.data.signerPubkey }}</Item>
+        <Item title="merkleTreeRootOfTransactions">{{ data?.data.merkleTreeRootOfTransactions }}</Item>
+        <Item title="transactionCount">{{ data?.data.transactionCount }}</Item>
+        <Item title="blockSize">{{ data?.data.blockSize }}</Item>
+        <Item title="merkleTreeRootOfWorldState">{{ data?.data.merkleTreeRootOfWorldState }}</Item>
 
     </div>
     <!-- <a-divider />
@@ -26,7 +24,7 @@
 
 <script setup lang="ts">
 import TxsTimelineItem from "./TxsTimelineItem.vue";
-import { useBlockDetail } from "@/composition/useMock";
+import { useBlockH2ChainDetail } from "@/composition/useMock";
 import { reactive } from "vue";
 import Item from "@/components/Item.vue";
 import Title from '@/components/Title.vue';
@@ -39,7 +37,8 @@ const params = reactive({
     id: props.height || '123'
 })
 
-const { data, error } = useBlockDetail(params)
+// const { data, error } = useBlockDetail(params)
+const { data, error } = useBlockH2ChainDetail(params)
 </script>
 
 <style scoped>

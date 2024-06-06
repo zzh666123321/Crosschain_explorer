@@ -1,17 +1,19 @@
 <template>
     <Title title="以太坊区块详情"></Title>
     <div>
-        <Item title="timestamp">{{ height }}</Item>
-        <Item title="blockSize">{{ data?.header.hash }}</Item>
-        <Item title="previousBlockAddress">{{ data?.header.timestamp }}</Item>
+        <Item title="区块高度">{{ height }}</Item>
+        <Item title="difficulty">{{ data?.data.difficulty }}</Item>
+        <Item title="minerAddress">{{ data?.data.minerAddress }}</Item>
 
-      <Item title="gaslimit">{{ data?.header.blockReward }}</Item>
-        <Item title="gasUsed">{{ data?.header.blockReward }}</Item>
-        <Item title="stateRoot">{{ data?.header.transactionCount }}</Item>
-        <Item title="totalDifficulty ">{{ data?.header.difficulty }}</Item>
-        <Item title="blockReward">{{ data?.header.totalDifficulty }}</Item>
-        <Item title="minerAddress">{{ data?.header.size }}</Item>
-        <Item title="transactionCount">{{ data?.header.stateRoot }}</Item>
+      <Item title="gaslimit">{{ data?.data.gasLimit }}</Item>
+        <Item title="totalDifficulty">{{ data?.data.totalDifficulty }}</Item>
+        <Item title="previousBlockAddress">{{ data?.data.previousBlockAddress }}</Item>
+        <Item title="gasUsed ">{{ data?.data.gasUsed }}</Item>
+        <Item title="stateRoot">{{ data?.data.stateRoot }}</Item>
+        <Item title="transactionCount">{{ data?.data.transactionCount }}</Item>
+        <Item title="blockReward">{{ data?.data.blockReward }}</Item>
+        <Item title="blockSize">{{ data?.data.blockSize }}</Item>
+        <Item title="timestamp">{{ data?.data.timestamp }}</Item>
     </div>
     <!-- <a-divider />
     <h2>交易列表</h2>
@@ -24,7 +26,7 @@
 
 <script setup lang="ts">
 import TxsTimelineItem from "./TxsTimelineItem.vue";
-import { useBlockDetail } from "@/composition/useMock";
+import { useBlockEthDetail } from "@/composition/useMock";
 import { reactive } from "vue";
 import Item from "@/components/Item.vue";
 import Title from '@/components/Title.vue';
@@ -37,7 +39,8 @@ const params = reactive({
     id: props.height || '123'
 })
 
-const { data, error } = useBlockDetail(params)
+// const { data, error } = useBlockDetail(params)
+const { data, error } = useBlockEthDetail(params)
 </script>
 
 <style scoped>

@@ -1,17 +1,17 @@
 <template>
     <Title title="长安链区块详情"></Title>
     <div>
-        <Item title="txHash">{{ height }}</Item>
-        <Item title="blockHash">{{ data?.header.hash }}</Item>
-        <Item title="blockNumber">{{ data?.header.timestamp }}</Item>
-      <Item title="from">{{ data?.header.miner }}</Item>
-        <Item title="gas">{{ data?.header.blockReward }}</Item>
-        <Item title="gasPrice">{{ data?.header.transactionCount }}</Item>
-        <Item title="难度">{{ data?.header.difficulty }}</Item>
-        <Item title="nonce">{{ data?.header.totalDifficulty }}</Item>
-        <Item title="to">{{ data?.header.size }}</Item>
-        <Item title="value">{{ data?.header.stateRoot }}</Item>
-        <Item title="input">{{ data?.header.parentHash }}</Item>
+        <Item title="区块高度">{{ height }}</Item>
+        <Item title="timeStamp">{{ data?.data.timeStamp }}</Item>
+        <Item title="blockHash">{{ data?.data.blockHash }}</Item>
+      <Item title="previousBlockHash">{{ data?.data.previousBlockHash }}</Item>
+        <Item title="grwSetRootas">{{ data?.data.rwSetRoot }}</Item>
+        <Item title="txRoot">{{ data?.data.txRoot }}</Item>
+        <Item title="signature">{{ data?.data.signature }}</Item>
+        <Item title="dagHash">{{ data?.data.dagHash }}</Item>
+        <Item title="proposerMemberInfo">{{ data?.data.proposerMemberInfo }}</Item>
+        <Item title="transactionCount">{{ data?.data.transactionCount }}</Item>
+
     </div>
     <!-- <a-divider />
     <h2>交易列表</h2>
@@ -24,7 +24,9 @@
 
 <script setup lang="ts">
 import TxsTimelineItem from "./TxsTimelineItem.vue";
-import { useBlockDetail } from "@/composition/useMock";
+import { useBlockChainMakerDetail } from "@/composition/useMock";
+import { useBlockListChainMaker } from "@/composition/useMock";
+import {getBlockDetail} from "@/api/block";
 import { reactive } from "vue";
 import Item from "@/components/Item.vue";
 import Title from '@/components/Title.vue';
@@ -37,7 +39,24 @@ const params = reactive({
     id: props.height || '123'
 })
 
-const { data, error } = useBlockDetail(params)
+const { data, error } = useBlockChainMakerDetail(params)
+
+// const { data, error } = useBlockListChainMaker(params);
+
+
+// const data1 = route.query
+// console.log(data1)
+
+
+// console.log(data)
+// console.log(typeof data)
+
+// const datadata = getBlockDetail(String(data1))
+// console.log(datadata)
+
+
+// const data = useTr ansactionList(chainIP)
+
 </script>
 
 <style scoped>

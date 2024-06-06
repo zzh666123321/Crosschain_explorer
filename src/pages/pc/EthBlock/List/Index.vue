@@ -1,19 +1,20 @@
 <template>
   <Title title="以太坊详情" />
   <Search :placeholder="placeholder1"></Search>
-  <BlockTable :type="columns" :from="from" :data="data"></BlockTable>
+  <BlockTable :type="columnsEth" :from="from" :data="data"></BlockTable>
 </template>
 
 <script lang="ts" setup>
-import BlockTable from "@/components/tables/BlockTable.vue";
+import BlockTable from "@/components/tables/BlockTableEth.vue";
 import { useBlockList } from "@/composition/useMock";
 import Title from "@/components/Title.vue";
 import { reactive } from "vue";
 import Search from "@/pages/pc/Home/Search/Index.vue";
 import {CHOOSE_PLACE_HOLDER} from "@/common/constants";
 import {columns} from "@/models/block";
+import {columnsEth} from "@/models/block";
 import {getBlockDetail} from "@/api/block";
-import { useBlockList1 } from "@/composition/useMock";
+import { useBlockListEth } from "@/composition/useMock";
 import { useRouter, useRoute} from 'vue-router'
 
 const router = useRouter()
@@ -28,8 +29,8 @@ const params = reactive({
 
 
 const from = 'ethBlock'
-const { data, error } = useBlockList(params);
-// const { data, error } = useBlockList1(params);
+// const { data, error } = useBlockList(params);
+const { data, error } = useBlockListEth(params);
 
 
 // const data1 = route.query

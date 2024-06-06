@@ -1,0 +1,16 @@
+{
+    "code": "1001",
+    "msg": "Request Successfully!",
+    "data": {
+      "timeStamp": "2024-06-03T06:38:04.6022327Z",
+      "merkleTreeRootOfTransactionState": "a06f9852bc672980fd197ac424eac1116e51cdf891d11fa5dc472827d1521d1b",
+      "blockHash": "7b3c09a47df76ff4038f5e0eeadf2c297523be60e1297fe95ff49f2ebb6e93c7",
+      "previousBlockHash": "18c4d913ead7141b7e384e839e73af589a646320ce36bde2d3f64494a453fa31",
+      "signerPubkey": "0485fa02af56f8f47b8e69197b8d7493e680fc5c64f34fe205e297754ac854656c7609644e1dad02858222c3d043f519cd6bbb065c8547566caeb80f79c087ba18",
+      "merkleTreeRootOfTransactions": "0ce2bd745a9272b1fcf74f93af9d37c403a4fe7d0d134170e673f030ce1dfa18",
+      "blockHeight": 3000,
+      "transactionCount": 2,
+      "blockSize": 1000,
+      "merkleTreeRootOfWorldState": "1480da1a74d0e1e2c12dfe3ca5d1340dedb3b1da7c12144bdfb180dda2ea7a09"
+    }
+  }

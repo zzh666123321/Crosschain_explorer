@@ -25,15 +25,15 @@ export const columnsChainMaker = [
 ];
 export const columnsEth = [
     { title: '高度', dataIndex: 'blockHeight', width: 100 },
-    { title: 'hash值', dataIndex: 'blockHash', width: 80 },
-    { title: '出块时间', dataIndex: 'timeStamp', width: 180 },
-    { title: 'DagHash', dataIndex: 'dagHash', width: 80 },
-    { title: 'txRoot', dataIndex: 'txRoot', ellipsis: true }
+    { title: 'stateRoot', dataIndex: 'stateRoot', width: 100 },
+    { title: 'gasLimit', dataIndex: 'gasLimit', width: 100 },
+    { title: 'totalDifficulty', dataIndex: 'totalDifficulty', width: 120 },
+    { title: 'previousBlockAddress', dataIndex: 'previousBlockAddress', ellipsis: true }
 ];
 export const columnsH2Chain = [
     { title: '高度', dataIndex: 'blockHeight', width: 100 },
-    { title: 'hash值', dataIndex: 'blockHash', width: 80 },
-    { title: '出块时间', dataIndex: 'timeStamp', width: 180 },
-    { title: 'DagHash', dataIndex: 'dagHash', width: 80 },
-    { title: 'txRoot', dataIndex: 'txRoot', ellipsis: true }
+    { title: '区块hash值', dataIndex: 'blockHash', width: 100 },
+    { title: '出块时间', dataIndex: 'timeStamp', width: 210 },
+    { title: 'previousBlockHash', dataIndex: 'previousBlockHash', width: 100 },
+    { title: 'signerPubkey', dataIndex: 'signerPubkey', ellipsis: true }
 ];

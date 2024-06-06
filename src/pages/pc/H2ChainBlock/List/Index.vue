@@ -1,19 +1,19 @@
 <template>
   <Title title="海河智链详情" />
    <Search :placeholder="placeholder1"></Search>
-  <BlockTable :type="columns" :from = "from" :data="data"></BlockTable>
+  <BlockTable :type="columnsH2Chain" :from = "from" :data="data"></BlockTable>
 </template>
 
 <script lang="ts" setup>
-import BlockTable from "@/components/tables/BlockTable.vue";
+import BlockTable from "@/components/tables/BlockTableH2Chain.vue";
 import { useBlockList } from "@/composition/useMock";
 import Title from "@/components/Title.vue";
 import { reactive } from "vue";
 import Search from "@/pages/pc/Home/Search/Index.vue";
 import {CHOOSE_PLACE_HOLDER} from "@/common/constants";
-import {columns} from "@/models/block";
+import {columnsH2Chain} from "@/models/block";
 import {getBlockDetail} from "@/api/block";
-import { useBlockList1 } from "@/composition/useMock";
+import { useBlockListH2Chain } from "@/composition/useMock";
 import { useRouter, useRoute} from 'vue-router'
 
 const router = useRouter()
@@ -28,20 +28,20 @@ const params = reactive({
 });
 
 // const { data, error } = useBlockList(params);
-const { data, error } = useBlockList1(params);
+const { data, error } = useBlockListH2Chain(params);
 
-const from = "h2block"
-
-
-const data1 = route.query
-console.log(data1)
+// const from = "h2block"
 
 
-console.log(data)
-console.log(typeof data)
+// const data1 = route.query
+// console.log(data1)
 
-const datadata = getBlockDetail(String(data1))
-console.log(datadata)
+
+// console.log(data)
+// console.log(typeof data)
+
+// const datadata = getBlockDetail(String(data1))
+// console.log(datadata)
 
 
 

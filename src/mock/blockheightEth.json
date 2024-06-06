@@ -1,0 +1,18 @@
+{
+    "code": "1001",
+    "msg": "Request Successfully!",
+    "data": {
+      "difficulty": 2,
+      "minerAddress": "0x0000000000000000000000000000000000000000",
+      "gasLimit": 26771921328,
+      "totalDifficulty": 5256880,
+      "previousBlockAddress": "0x685968c1ba6b5cff8ce01e38eae130234bf6256c9cdbfdab3d31231f53ca9304",
+      "gasUsed": 0,
+      "blockHeight": "7000",
+      "stateRoot": "0xccad9fe6165ff1175b4a9d0daafb459d4a180371960ffd418a064a0ba6ee452c",
+      "transactionCount": 0,
+      "blockReward": 0,
+      "blockSize": 610,
+      "timestamp": 1704358265
+    }
+  }
