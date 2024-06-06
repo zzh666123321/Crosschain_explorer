@@ -29,7 +29,7 @@ const router = useRouter()
 const route = useRoute()
 const data1 = route.query
 
-const from = 'blocks'
+const from = 'block'
 
 
 const placeholder1=CHOOSE_PLACE_HOLDER;
