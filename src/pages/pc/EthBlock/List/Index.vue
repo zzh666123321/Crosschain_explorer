@@ -32,15 +32,15 @@ const { data, error } = useBlockList(params);
 // const { data, error } = useBlockList1(params);
 
 
-const data1 = route.query
-console.log(data1)
+// const data1 = route.query
+// console.log(data1)
 
 
-console.log(data)
-console.log(typeof data)
+// console.log(data)
+// console.log(typeof data)
 
-const datadata = getBlockDetail(String(data1))
-console.log(datadata)
+// const datadata = getBlockDetail(String(data1))
+// console.log(datadata)
 
 
 </script>

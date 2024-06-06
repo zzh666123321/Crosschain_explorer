@@ -1,5 +1,5 @@
 <template>
-    <a-table :columns="columns" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
+    <a-table :columns="columnsChainMaker" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
         <template #bodyCell="{ column, text }">
             <template v-if="column.dataIndex === 'blockHeight'">
                 <router-link :to="`/${from}/${text}`">{{ text }}</router-link>
@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import { columns } from "@/models/block";
+import { columnsChainMaker } from "@/models/block";
 import { PropType } from "vue";
 defineProps({
     data: Array as PropType<any[] | null>,

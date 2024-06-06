@@ -4,7 +4,7 @@ import { wrapResponse } from "@/api/request";
 
 import txs from '@/mock/transactions.json'
 import blks from '@/mock/blocks.json'
-import blks1 from '@/mock/block1.json'
+import blks1 from '@/mock/ChainMakerblock.json'
 import address from '@/mock/address.json'
 import block from '@/mock/block.json'
 
