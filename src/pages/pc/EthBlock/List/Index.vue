@@ -19,6 +19,10 @@ import {columnsEth} from "@/models/block";
 import {getBlockDetail} from "@/api/block";
 import { useBlockListEth } from "@/composition/useMock";
 import { useRouter, useRoute} from 'vue-router'
+import { ref } from 'vue';
+import { useFetchFactory } from '@/api/factory'
+import shuffle from "@/utils/shuffle";
+import { wrapResponse } from "@/api/request";
 
 const router = useRouter()
 const route = useRoute()
@@ -33,18 +37,34 @@ const params = reactive({
 
 const from = 'ethBlock'
 // const { data, error } = useBlockList(params);
-const { data, error } = useBlockListEth(params);
+
 
 
 const data1 = route.query
-// console.log(data1)
 
+const { data, error } = useBlockListEth(params);
+console.log(data)
+console.log(typeof data)
 
+// const  datadata = await getBlockDetail("116.204.36.31:10012")
+// console.log("datadata======="+datadata)
+// console.log(datadata)
+
+// const data12 = datadata.data.tenBlocksInfo
+
+// console.log("data12======="+data12)
+// console.log(data12)
+// console.log(typeof(data12))
+
+// const useBlock = useFetchFactory<API.BlockListParams, typeof datadata.data.tenBlocksInfo>(
+//     () => {
+//         const data = shuffle<typeof datadata.data.tenBlocksInfo[0]>(datadata.data.tenBlocksInfo);
+//         return Promise.resolve(wrapResponse(data));
+//     }
+// )
+// const {data,error} = useBlock(params)
 // console.log(data)
 // console.log(typeof data)
-
-// const datadata = getBlockDetail(String(data1))
-// console.log(datadata)
 
 
 </script>

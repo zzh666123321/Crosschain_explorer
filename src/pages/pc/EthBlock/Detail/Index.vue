@@ -30,6 +30,10 @@ import { useBlockEthDetail } from "@/composition/useMock";
 import { reactive } from "vue";
 import Item from "@/components/Item.vue";
 import Title from '@/components/Title.vue';
+import { useFetchFactory } from '@/api/factory'
+import shuffle from "@/utils/shuffle";
+import { wrapResponse } from "@/api/request";
+import txs from '@/mock/transactions.json'
 
 const props = defineProps({
     height: String
@@ -41,6 +45,32 @@ const params = reactive({
 
 // const { data, error } = useBlockDetail(params)
 const { data, error } = useBlockEthDetail(params)
+console.log(data)
+console.log(typeof data)
+
+// const  datadata = await getBlocksDetail(String(props.height),"116.204.36.31:10012")
+// console.log("datadata======="+datadata)
+// console.log(datadata)
+
+// const data12 = datadata.data
+
+// console.log("data12======="+data12)
+// console.log(data12)
+// console.log(typeof(data12))
+
+// const useBlock = useFetchFactory<API.BlockDetailParams, typeof data12>(
+//     () => {
+//         const data = data12
+//         return Promise.resolve(wrapResponse({
+//             ...data,
+//             transactions: txs.data
+//         }))
+//     }
+// )
+// const {data,error} = useBlock(params)
+// console.log(data)
+// console.log(typeof data)
+
 </script>
 
 <style scoped>

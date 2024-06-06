@@ -31,20 +31,44 @@ export function detail(data: API.BlockDetailParams) {
 }
 
 
-export function sendPostRequest(chainIp: string) {
-    return request<API.BlockDetailResponse>({
+export async function sendPostRequest(chainIp: string) {
+    const resopnse = await request<API.BlockDetailResponse>({
         url: '/supply/chain/checkNewblock',
         method: 'post',
         // data: { chainIp }
         data: {
-            chainIp: chainIp
+            "chainIP": chainIp
         }
     })
+    return resopnse.data;
 }
 
-export function getBlockDetail(chainIP: string){
-    return sendPostRequest(chainIP)
+export async function getBlockDetail(chainIP: string){
+    const resopnse = await request<any>({
+        url: '/supply/chain/checkNewblock',
+        method: 'post',
+        // data: { chainIp }
+        data: {
+            "chainIP": chainIP
+        }
+    })
+    return resopnse.data;
 }
+
+export async function getBlocksDetail(blockHEIGHT: string,chainIP: string){
+    const resopnse = await request<any>({
+        url: '/supply/chain/checkBlockInfoheight',
+        method: 'post',
+        // data: { chainIp }
+        data: {
+            "blockHEIGHT": blockHEIGHT,
+            "chainIP": chainIP
+        }
+    })
+    return resopnse.data;
+}
+
+
 
 
 

@@ -34,13 +34,18 @@ export const useBlockList = useFetchFactory<API.BlockListParams, typeof blks.dat
 )
 
 
-
 export const useBlockListChainMaker = useFetchFactory<API.BlockListParams, typeof blksChainMaker.data.tenBlocksInfo>(
     () => {
         const data = shuffle<typeof blksChainMaker.data.tenBlocksInfo[0]>(blksChainMaker.data.tenBlocksInfo);
         return Promise.resolve(wrapResponse(data));
     }
 )
+// export const useBlockListChainMaker1 = useFetchFactory<API.BlockListParams, typeof blksChainMaker.data.tenBlocksInfo>(
+//     () => {
+//         const data = shuffle<typeof blksChainMaker.data.tenBlocksInfo[0]>(blksChainMaker.data.tenBlocksInfo);
+//         return Promise.resolve(wrapResponse(data));
+//     }
+// )
 
 export const useBlockListH2Chain = useFetchFactory<API.BlockListParams, typeof blksH2Chain.data.tenBlocksInfo>(
     () => {
