@@ -28,8 +28,8 @@ const params = reactive({
 
 
 const from = 'ethBlock'
-// const { data, error } = useBlockList(params);
-const { data, error } = useBlockList1(params);
+const { data, error } = useBlockList(params);
+// const { data, error } = useBlockList1(params);
 
 
 const data1 = route.query
