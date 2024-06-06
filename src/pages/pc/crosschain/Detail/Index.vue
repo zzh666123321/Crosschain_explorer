@@ -1,5 +1,5 @@
 <template>
-  <div v-if="hasResult">
+  <div>
     <Title title="交易详情"></Title>
     <div class="info">
       <Item title="交易哈希">{{ hash }}</Item>
@@ -34,15 +34,7 @@
       </Item>
     </div>
   </div>
-  <div v-else>
-    <a-empty style="margin-top: 200px">
-      <template #description>
-        <div> 未搜索到哈希为 </div>
-        <a-tag> {{ hash }} </a-tag>
-        <div> 的交易 </div>
-      </template>
-    </a-empty>
-  </div>
+
 </template>
 
 <script setup lang="ts">
