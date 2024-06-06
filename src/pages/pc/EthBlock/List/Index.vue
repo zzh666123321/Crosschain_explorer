@@ -1,6 +1,9 @@
 <template>
   <Title title="以太坊详情" />
-  <Search :placeholder="placeholder1"></Search>
+
+  <div>
+    IP和端口号是：{{ data1.chainIP}}
+  </div>  <Search :placeholder="placeholder1"></Search>
   <BlockTable :type="columnsEth" :from="from" :data="data"></BlockTable>
 </template>
 
@@ -33,7 +36,7 @@ const from = 'ethBlock'
 const { data, error } = useBlockListEth(params);
 
 
-// const data1 = route.query
+const data1 = route.query
 // console.log(data1)
 
 

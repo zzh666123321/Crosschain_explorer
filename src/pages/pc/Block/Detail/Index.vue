@@ -43,7 +43,7 @@ const { data, error } = useBlockChainMakerDetail(params)
 
 // const { data, error } = useBlockListChainMaker(params);
 
-
+//
 // const data1 = route.query
 // console.log(data1)
 

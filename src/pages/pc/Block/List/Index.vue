@@ -1,5 +1,9 @@
 <template>
   <Title title="长安链详情" />
+
+  <div>
+    IP和端口号是：{{ data1.chainIP}}
+  </div>
    <Search :placeholder="placeholder1"></Search>
   <BlockTable :type="columnsChainMaker" :from="from" :data="data"></BlockTable>
   <!-- <BlockTable :type="type" :from="from" :data="data1"></BlockTable> -->
@@ -23,8 +27,9 @@ import { useRouter, useRoute} from 'vue-router'
 
 const router = useRouter()
 const route = useRoute()
+const data1 = route.query
 
-const from = 'block'
+const from = 'blocks'
 
 
 const placeholder1=CHOOSE_PLACE_HOLDER;

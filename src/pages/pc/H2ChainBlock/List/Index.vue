@@ -1,5 +1,9 @@
 <template>
   <Title title="海河智链详情" />
+
+  <div>
+    IP和端口号是：{{ data1.chainIP}}
+  </div>
    <Search :placeholder="placeholder1"></Search>
   <BlockTable :type="columnsH2Chain" :from = "from" :data="data"></BlockTable>
 </template>
@@ -18,7 +22,7 @@ import { useRouter, useRoute} from 'vue-router'
 
 const router = useRouter()
 const route = useRoute()
-
+const from= 'h2block'
 
 const placeholder1=CHOOSE_PLACE_HOLDER;
 const params = reactive({
@@ -33,7 +37,7 @@ const { data, error } = useBlockListH2Chain(params);
 // const from = "h2block"
 
 
-// const data1 = route.query
+const data1 = route.query
 // console.log(data1)
 
 
