@@ -15,13 +15,10 @@ export const columns = [
 ];
 export const columnsChainMaker = [
     { title: '高度', dataIndex: 'blockHeight', width: 50 },
-    { title: '区块hash值', dataIndex: 'blockHash', width: 200 },
-    { title: '时间戳', dataIndex: 'timeStamp', width: 100 },
-    { title: 'DagHash', dataIndex: 'dagHash', width: 200 },
-    { title: 'txRoot', dataIndex: 'txRoot', width: 150 },
-    { title: 'rwSetRoot', dataIndex: 'rwSetRoot', width: 150 },
-    { title: 'signature', dataIndex: 'signature', width: 180 },
-    { title: 'previousBlockHash', dataIndex: 'previousBlockHash',ellipsis: true }
+    { title: '区块hash值', dataIndex: 'blockHash', width: 300 },
+    { title: '时间戳', dataIndex: 'timeStamp', width: 120 },
+    { title: 'DagHash', dataIndex: 'dagHash', width: 300 },
+    { title: 'txRoot', dataIndex: 'txRoot',ellipsis: true }
 ];
 export const columnsEth = [
     { title: '高度', dataIndex: 'blockHeight', width: 80 },

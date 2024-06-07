@@ -3,7 +3,7 @@
   <div>
     <Item title="区块高度">{{ height }}</Item>
     <Item title="timeStamp">{{ data?.data.timeStamp }}</Item>
-    <Item title="merkleTreeRootOfTransactionState">{{
+    <Item title="merkleTreeRootOfTxState">{{
       data?.data.merkleTreeRootOfTransactionState
     }}</Item>
     <Item title="blockHash">{{ data?.data.blockHash }}</Item>
