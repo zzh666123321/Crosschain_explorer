@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { columnsChainMaker } from "@/models/block";
-import { PropType } from "vue";
+import { PropType, watch } from "vue";
 defineProps({
     data: Array as PropType<any[] | null>,
     from: String,
