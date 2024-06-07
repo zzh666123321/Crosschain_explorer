@@ -4,7 +4,7 @@
             <div> 主页 </div>
         </router-link>
 
-      <router-link to="/main">
+      <router-link to="/lookup">
         <div> 监管 </div>
       </router-link>
 

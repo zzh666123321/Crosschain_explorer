@@ -8,6 +8,10 @@ export const routes = [
         component: () => import("@/pages/pc/Home/Index.vue")
     },
     {
+        path: '/lookup',name:'lookup',
+        component: () => import("@/pages/pc/lookup/Index.vue")
+    },
+    {
         path: '/allchain',name:'allchain',
         component: () => import("@/pages/pc/AllChain/Index.vue")
     },
