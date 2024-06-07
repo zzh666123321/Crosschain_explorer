@@ -40,34 +40,24 @@ const params = reactive({
   offset: 0,
 });
 
-// const { data, error } = useBlockListChainMaker(params);
-// console.log(data)
-// console.log(typeof data)
+const { data, error } = useBlockListChainMaker(params);
+console.log(data)
+console.log(typeof data)
 
-let data = ref([]);
-getBlockDetail("116.204.36.31:1000").then((res) => {
-  const datadata = res;
-  console.log("datadata=======" + datadata);
-  console.log(datadata);
-
-  const data12 = datadata.data.tenBlocksInfo;
-
-  console.log("data12=======" + data12);
-  console.log(data12);
-  console.log(typeof data12);
-
-  // const useBlock = useFetchFactory<
-  //   API.BlockListParams,
-  //   typeof datadata.data.tenBlocksInfo
-  // >(() => {
-  //   const data = shuffle<(typeof datadata.data.tenBlocksInfo)[0]>(
-  //     datadata.data.tenBlocksInfo
-  //   );
-  //   return Promise.resolve(wrapResponse(data));
-  // });
-  // const { data, error } = useBlock(params);
-  data.value = data12;
-});
+// let data = ref([]);
+// getBlockDetail("116.204.36.31:1000").then((res) => {
+//   const datadata = res;
+//   console.log("datadata=======" + datadata);
+//   console.log(datadata);
+//
+//   const data12 = datadata.data.tenBlocksInfo;
+//
+//   console.log("data12=======" + data12);
+//   console.log(data12);
+//   console.log(typeof data12);
+//
+//   data.value = data12;
+// });
 // const datadata = await getBlockDetail("116.204.36.31:1000");
 </script>
 

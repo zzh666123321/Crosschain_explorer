@@ -1,19 +1,19 @@
 <template>
     <Title title="以太坊区块详情"></Title>
     <div>
-        <Item title="区块高度">{{ height }}</Item>
-        <Item title="difficulty">{{ data?.data.difficulty }}</Item>
-        <Item title="minerAddress">{{ data?.data.minerAddress }}</Item>
+        <Item title="高度">{{ height }}</Item>
+        <Item title="难度">{{ data?.data.difficulty }}</Item>
+        <Item title="矿工">{{ data?.data.minerAddress }}</Item>
 
-      <Item title="gaslimit">{{ data?.data.gasLimit }}</Item>
-        <Item title="totalDifficulty">{{ data?.data.totalDifficulty }}</Item>
-        <Item title="previousBlockAddress">{{ data?.data.previousBlockAddress }}</Item>
-        <Item title="gasUsed ">{{ data?.data.gasUsed }}</Item>
-        <Item title="stateRoot">{{ data?.data.stateRoot }}</Item>
-        <Item title="transactionCount">{{ data?.data.transactionCount }}</Item>
-        <Item title="blockReward">{{ data?.data.blockReward }}</Item>
-        <Item title="blockSize">{{ data?.data.blockSize }}</Item>
-        <Item title="timestamp">{{ data?.data.timestamp }}</Item>
+      <Item title="gas上限">{{ data?.data.gasLimit }}</Item>
+        <Item title="总难度">{{ data?.data.totalDifficulty }}</Item>
+        <Item title="前块地址">{{ data?.data.previousBlockAddress }}</Item>
+        <Item title="消耗gas">{{ data?.data.gasUsed }}</Item>
+        <Item title="交易根">{{ data?.data.stateRoot }}</Item>
+        <Item title="交易数">{{ data?.data.transactionCount }}</Item>
+        <Item title="区块奖励">{{ data?.data.blockReward }}</Item>
+        <Item title="区块大小">{{ data?.data.blockSize }}</Item>
+        <Item title="时间戳">{{ data?.data.timestamp }}</Item>
     </div>
     <!-- <a-divider />
     <h2>交易列表</h2>
@@ -46,43 +46,22 @@ const params = reactive({
 
 // const { data, error } = useBlockDetail(params)
 
-// const { data, error } = useBlockEthDetail(params)
-// console.log(data)
-// console.log(typeof data)
-
-let data = reactive({
-  data: {
-  },
-});
-onMounted(() => {
-  getBlocksDetail(String(props.height), "116.204.36.31:10012").then((res) => {
-    console.log(data);
-
-    data.data = res.data;
-    //   console.log("datadata=======" + datadata);
-    //   console.log(datadata);
-
-    //   const data12 = datadata;
-
-    //   console.log("data12=======" + data12);
-    //   console.log(data12);
-    //   console.log(typeof data12);
-
-    // const useBlock = useFetchFactory<
-    //   API.BlockListParams,
-    //   typeof datadata.data.tenBlocksInfo
-    // >(() => {
-    //   const data = shuffle<(typeof datadata.data.tenBlocksInfo)[0]>(
-    //     datadata.data.tenBlocksInfo
-    //   );
-    //   return Promise.resolve(wrapResponse(data));
-    // });
-    // const { data, error } = useBlock(params);
-    //   data= data12;
-    //   console.log(data12)
-    console.log(data.data);
-  });
-});
+const { data, error } = useBlockEthDetail(params)
+console.log(data)
+console.log(typeof data)
+//
+// let data = reactive({
+//   data: {
+//   },
+// });
+// onMounted(() => {
+//   getBlocksDetail(String(props.height), "116.204.36.31:10012").then((res) => {
+//     console.log(data);
+//
+//     data.data = res.data;
+//     console.log(data.data);
+//   });
+// });
 
 
 // const  datadata = await getBlocksDetail(String(props.height),"116.204.36.31:10012")

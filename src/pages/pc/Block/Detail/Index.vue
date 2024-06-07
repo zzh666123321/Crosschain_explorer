@@ -2,15 +2,15 @@
     <Title title="长安链区块详情"></Title>
     <div>
         <Item title="区块高度">{{ height }}</Item>
-        <Item title="timeStamp">{{ data?.data.timeStamp }}</Item>
-        <Item title="blockHash">{{ data?.data.blockHash }}</Item>
-      <Item title="previousBlockHash">{{ data?.data.previousBlockHash }}</Item>
-        <Item title="grwSetRootas">{{ data?.data.rwSetRoot }}</Item>
-        <Item title="txRoot">{{ data?.data.txRoot }}</Item>
-        <Item title="signature">{{ data?.data.signature }}</Item>
-        <Item title="dagHash">{{ data?.data.dagHash }}</Item>
-        <Item title="proposerMemberInfo">{{ data?.data.proposerMemberInfo }}</Item>
-        <Item title="transactionCount">{{ data?.data.transactionCount }}</Item>
+        <Item title="时间戳">{{ data?.data.timeStamp }}</Item>
+        <Item title="区块哈希">{{ data?.data.blockHash }}</Item>
+      <Item title="前块哈希">{{ data?.data.previousBlockHash }}</Item>
+        <Item title="全局根">{{ data?.data.rwSetRoot }}</Item>
+        <Item title="交易根">{{ data?.data.txRoot }}</Item>
+        <Item title="签名">{{ data?.data.signature }}</Item>
+        <Item title="dag哈希">{{ data?.data.dagHash }}</Item>
+        <Item title="成员信息">{{ data?.data.proposerMemberInfo }}</Item>
+        <Item title="交易数">{{ data?.data.transactionCount }}</Item>
 
     </div>
     <!-- <a-divider />
@@ -45,43 +45,22 @@ const params = reactive({
     id: props.height || '123'
 })
 
-// const { data, error } = useBlockChainMakerDetail(params)
-// console.log(data)
-// console.log(typeof data)
-
-let data = reactive({
-  data: {
-  },
-});
-onMounted(() => {
-  getBlocksDetail(String(props.height), "116.204.36.31:1000").then((res) => {
-    console.log(data);
-
-    data.data = res.data;
-    //   console.log("datadata=======" + datadata);
-    //   console.log(datadata);
-
-    //   const data12 = datadata;
-
-    //   console.log("data12=======" + data12);
-    //   console.log(data12);
-    //   console.log(typeof data12);
-
-    // const useBlock = useFetchFactory<
-    //   API.BlockListParams,
-    //   typeof datadata.data.tenBlocksInfo
-    // >(() => {
-    //   const data = shuffle<(typeof datadata.data.tenBlocksInfo)[0]>(
-    //     datadata.data.tenBlocksInfo
-    //   );
-    //   return Promise.resolve(wrapResponse(data));
-    // });
-    // const { data, error } = useBlock(params);
-    //   data= data12;
-    //   console.log(data12)
-    console.log(data.data);
-  });
-});
+const { data, error } = useBlockChainMakerDetail(params)
+console.log(data)
+console.log(typeof data)
+//
+// let data = reactive({
+//   data: {
+//   },
+// });
+// onMounted(() => {
+//   getBlocksDetail(String(props.height), "116.204.36.31:1000").then((res) => {
+//     console.log(data);
+//
+//     data.data = res.data;
+//     console.log(data.data);
+//   });
+// });
 
 
 // const  datadata = await getBlocksDetail(String(props.height),"116.204.36.31:1000")
