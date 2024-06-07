@@ -2,20 +2,20 @@
   <div>
     <Title title="交易详情"></Title>
     <div class="info">
-      <Item title="源链IP">{{ transaction?.srcIp}}</Item>
+      <Item title="源链IP">{{ transaction?.data.srcIp}}</Item>
 
-      <Item title="源链端口">{{ transaction?.srcPort }}</Item>
+      <Item title="源链端口">{{ transaction?.data.srcPort }}</Item>
       <Item title="源链Hash">
-        <div>{{ transaction?.srcHash }}</div>
+        <div>{{ transaction?.data.srcHash }}</div>
       </Item>
       <Item title="目的链IP">
-        <div>{{ transaction?.dstIp }}</div>
+        <div>{{ transaction?.data.dstIp }}</div>
       </Item>
       <Item title="目的链端口">
-        <div>{{ transaction?.dstPort }}</div>
+        <div>{{ transaction?.data.dstPort }}</div>
       </Item>
       <Item title="目的链Hash">
-        <div>{{ transaction?.dstHash }}</div>
+        <div>{{ transaction?.data.dstHash }}</div>
 
       </Item>
 
@@ -44,20 +44,30 @@ const params = reactive({
   tx_hash: props.hash || "123",
 });
 
-const transaction = tx.data
+// let transaction = reactive({
+//   data: {
+//   },
+// });
+// transaction.data = tx.data
+
+
+var srcChainType = "h2chain"
+var dstChainType = "h2chain"
 
 const route = useRoute();
 const data1 = route.query;
-const srcChainType = data1.srcChainType
-const dstChainType = data1.dstChainType
+srcChainType = String(data1.srcChainType)
+dstChainType = String(data1.dstChainType)
 console.log(data1)
 
-let data = reactive({});
+let transaction = reactive({
+  data: {
+  },
+});
 onMounted(() => {
   sendCrossTx(String(srcChainType),String(dstChainType)).then((res) => {
-    console.log(data);
-    data = tx.data;
-    console.log(data);
+    transaction.data = res.data;
+    console.log(transaction);
   });
 });
 
