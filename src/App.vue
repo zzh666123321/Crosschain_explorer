@@ -26,4 +26,8 @@ initRoutes(isPC)
   margin: auto;
   position: relative;
 }
+
+.text {
+  font-size: 25px;
+}
 </style>

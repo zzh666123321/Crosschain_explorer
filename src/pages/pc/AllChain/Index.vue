@@ -1381,3 +1381,12 @@ export default {
 
 }
 </script>
+
+
+
+<style >
+
+.el-descriptions__body .el-descriptions__table .el-descriptions__cell {
+  font-size: 28px;
+}
+</style>

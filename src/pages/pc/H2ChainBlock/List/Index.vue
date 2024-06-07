@@ -1,8 +1,11 @@
 <template>
+
   <Title title="海河智链详情" />
 
   <div>
+    <h3>
     IP和端口号是：{{ data1.chainIP}}
+    </h3>
   </div>
    <Search :placeholder="placeholder1"></Search>
   <BlockTable :type="columnsH2Chain" :from = "from" :data="data"></BlockTable>
@@ -93,4 +96,12 @@ getBlockDetail("116.204.36.31:8000").then((res) => {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 25px;
+}
+
+</style>

@@ -1,7 +1,8 @@
 <template>
+
   <Title title="长安链详情" />
 
-  <div>IP和端口号是：{{ data1.chainIP }}</div>
+  <div><h3>IP和端口号是：{{ data1.chainIP }}</h3></div>
   <Search :placeholder="placeholder1"></Search>
   <BlockTable :type="columnsChainMaker" :from="from" :data="data"></BlockTable>
   <!-- <BlockTable :type="type" :from="from" :data="data1"></BlockTable> -->
@@ -70,4 +71,11 @@ getBlockDetail("116.204.36.31:1000").then((res) => {
 // const datadata = await getBlockDetail("116.204.36.31:1000");
 </script>
 
-<style scoped></style>
+<style scoped>
+
+
+h3 {
+  font-size: 25px;
+}
+
+</style>

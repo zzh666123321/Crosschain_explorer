@@ -61,12 +61,15 @@ export default defineComponent({
         <div class="left">
             <h1>{{ en }}</h1>
             <h2>{{ title }}</h2>
-          <div>点击此处前往单链页面：
+          <div> <h3>点击此处前往单链页面：
             <el-button @click="gotdasbchain">跳转</el-button>
+          </h3>
             <!-- <Search :placeholder="placeholder1"></Search>-->
           </div>
-          <div>点击此处前往跨链页面：
+          <div><h3>
+            点击此处前往跨链页面：
           <el-button @click="gotocrosschain">跳转</el-button>
+          </h3>
            <!-- <Search :placeholder="placeholder1"></Search>-->
           </div>
         </div>
@@ -88,13 +91,18 @@ export default defineComponent({
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 120px;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 80px;
 
 }
+
+h3 {
+  font-size: 25px;
+}
+
 
 .background {
   position: fixed;

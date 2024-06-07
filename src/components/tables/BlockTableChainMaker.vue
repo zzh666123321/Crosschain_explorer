@@ -1,10 +1,18 @@
 <template>
-    <a-table :columns="columnsChainMaker" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
+
+    <a-table  ustomHeaderRow='color:red' :columns="columnsChainMaker" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
+
         <template #bodyCell="{ column, text }">
+
             <template v-if="column.dataIndex === 'blockHeight'">
+
                 <router-link :to="`/${from}/${text}`">{{ text }}</router-link>
+
             </template>
+
         </template>
+
+
     </a-table>
 </template>
 
@@ -17,3 +25,11 @@ defineProps({
 })
 
 </script>
+
+<style scoped>
+.test {
+  font-size: 30px ;
+}
+
+
+</style>

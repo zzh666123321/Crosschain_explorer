@@ -662,15 +662,17 @@ export default {
 .btn{
   position: fixed;
   bottom:50px;
-  padding-left: 600px;
+  padding-left: 450px;
   font-size: 20px;
 }
 .stepSuc:hover {
   cursor: pointer;
+  font-size: 30px;
 }
 
 .stepErr:hover {
   cursor: not-allowed;
+  font-size: 30px;
 }
 
 .step_success {
@@ -679,5 +681,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  font-size: 30px;
+}
+*{
+  font-size: 25px !important;
 }
 </style>

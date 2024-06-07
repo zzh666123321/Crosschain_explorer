@@ -1,8 +1,9 @@
 <template>
-  <Title title="以太坊详情" />
-
+  <h1>
+  <Title title="以太坊详情"/>
+  </h1>
   <div>
-    IP和端口号是：{{ data1.chainIP}}
+    <h3>IP和端口号是：{{ data1.chainIP}}</h3>
   </div>  <Search :placeholder="placeholder1"></Search>
   <BlockTable :type="columnsEth" :from="from" :data="data"></BlockTable>
 </template>
@@ -94,4 +95,12 @@ getBlockDetail("116.204.36.31:10012").then((res) => {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 25px;
+}
+
+</style>

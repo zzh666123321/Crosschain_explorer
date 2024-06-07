@@ -61,6 +61,11 @@ const params = reactive({
   margin-bottom: 32px;
 }
 
+h3 {
+  font-size: 25px;
+}
+
+
 .text-area {
   border-left: lightgray 2px solid;
   padding-left: 6px;

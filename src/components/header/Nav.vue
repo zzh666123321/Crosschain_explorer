@@ -1,13 +1,13 @@
 <template>
     <div class="nav">
         <router-link to="/main">
-            <div> 主页 </div>
+          <div> <h3>主页 </h3> </div>
         </router-link>
 
+      <div  @click.capture="redirectToAnotherProject">   <h3> 监管  </h3></div>
 
 
 
-      <button @click="redirectToAnotherProject">监管</button>
 
         <!--<router-link to="/transactions">
             <div> 交易 </div>
@@ -19,7 +19,7 @@
         <div> 跨链 </div>
       </router-link>-->
         <router-link to="/user">
-            <div> 我的 </div>
+          <div> <h3> 我的 </h3> </div>
         </router-link>
     </div>
 </template>
@@ -55,6 +55,13 @@
     color: black;
     font-weight: bold;
 }
+
+
+h3 {
+  font-size: 25px;
+}
+
+
 </style>
 <script >
 export default {

@@ -18,11 +18,12 @@ defineProps({
     margin: 32px 0;
     display: flex;
     line-height: 44px;
+
 }
 
 .desc .title {
     flex-grow: 1;
-    font-size: 28px;
+    font-size: 50px;
 }
 
 .desc .buttons {
