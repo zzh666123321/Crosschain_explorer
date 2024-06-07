@@ -29,9 +29,7 @@
     </el-input>
   </div>
 
-  <div v-show="active == 3">
-    <el-button type="primary" @click="gotback()" class="btn_s">下一步</el-button>
-  </div>
+
 
 
 
@@ -49,23 +47,46 @@
     您所选择的参数是：{{ JSON.stringify(input)}}
   </div>
 
-  <div v-show="active == 3">
+  <div class="btn" v-show="active == 3" >
     <el-button
         type="primary"
         @click="openFullScreen1"
         class="btn_s"
         v-loading.fullscreen.lock="fullscreenLoading">
-      确认提交
+        确认提交
     </el-button>
   </div>
 
 
 
-  <div class="btn">
+  <div class="btn" v-show="active == 0">
     <el-button type="primary" @click="gobackHandle()" class="btn_s">上一步</el-button>
     <el-button type="primary" @click="stepSubmitHandle()" class="btn_s">下一步</el-button>
 
   </div>
+
+  <div class="btn" v-show="active == 1">
+    <el-button type="primary" @click="gobackHandle()" class="btn_s">上一步</el-button>
+    <el-button type="primary" @click="stepSubmitHandle()" class="btn_s">下一步</el-button>
+
+  </div>
+  <div class="btn" v-show="active == 2">
+    <el-button type="primary" @click="gobackHandle()" class="btn_s">上一步</el-button>
+    <el-button type="primary" @click="stepSubmitHandle()" class="btn_s">下一步</el-button>
+
+  </div>
+
+  <div class="btn" v-show="active == 3">
+    <el-button type="primary" @click="openFullScreen1" class="btn_s">确认提交</el-button>
+    <el-button type="primary" @click="gotback()" class="btn_s">交易详情</el-button>
+
+  </div>
+
+<!--  <div class="btn" v-show="active == 3" >-->
+<!--    <el-button type="primary" @click="gotback()" class="btn_s">下一步</el-button>-->
+<!--  </div>-->
+
+
 
 </template>
 
