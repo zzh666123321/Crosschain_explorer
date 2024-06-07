@@ -51,4 +51,9 @@ console.log(transactions)
 .table-container {
   z-index: 10;
 }
+
+h3 {
+  font-size: 25px;
+}
+
 </style>

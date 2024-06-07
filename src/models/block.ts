@@ -5,32 +5,31 @@
 
 export const columns = [
     { title: '高度', dataIndex: 'blockHeight', width: 100, className: "text" },
-    { title: '区块hash值', dataIndex: 'blockHash', width: 100, className: "text" },
+    { title: '区块哈希', dataIndex: 'blockHash', width: 100, className: "text" },
     { title: '时间戳', dataIndex: 'timeStamp', width: 100, className: "text" },
-    { title: 'DagHash', dataIndex: 'dagHash', width: 100, className: "text" },
-    { title: 'txRoot', dataIndex: 'txRoot', width: 100, className: "text" },
-    { title: 'rwSetRoot', dataIndex: 'rwSetRoot', width: 100, className: "text" },
-    { title: 'signature', dataIndex: 'signature', width: 100, className: "text" },
-    { title: 'previousBlockHash', dataIndex: 'previousBlockHash',ellipsis: true, className: "text" }
+    { title: 'Dag哈希', dataIndex: 'dagHash', width: 100, className: "text" },
+    { title: '交易跟', dataIndex: 'txRoot', width: 100, className: "text" },
+    { title: '签名', dataIndex: 'signature', width: 100, className: "text" },
+    { title: '前块哈希', dataIndex: 'previousBlockHash',ellipsis: true, className: "text" }
 ];
 export const columnsChainMaker = [
     { title: '高度', dataIndex: 'blockHeight', width: 80, className: "text"},
-    { title: '区块hash值', dataIndex: 'blockHash', width: 300, className: "text" },
+    { title: '区块哈希', dataIndex: 'blockHash', width: 300, className: "text" },
     { title: '时间戳', dataIndex: 'timeStamp', width: 120, className: "text" },
-    { title: 'DagHash', dataIndex: 'dagHash', width: 300, className: "text" },
-    { title: 'txRoot', dataIndex: 'txRoot',ellipsis: true, className: "text" }
+    { title: 'Dag哈希', dataIndex: 'dagHash', width: 300, className: "text" },
+    { title: '交易根', dataIndex: 'txRoot',ellipsis: true, className: "text" }
 ];
 export const columnsEth = [
     { title: '高度', dataIndex: 'blockHeight', width: 80, className: "text" },
-    { title: 'stateRoot', dataIndex: 'stateRoot', width: 500, className: "text" },
-    { title: 'gasLimit', dataIndex: 'gasLimit', width: 100, className: "text" },
-    { title: 'totalDifficulty', dataIndex: 'totalDifficulty', width: 120, className: "text" },
-    { title: 'previousBlockAddress', dataIndex: 'previousBlockAddress', ellipsis: true, className: "text" }
+    { title: '状态根', dataIndex: 'stateRoot', width: 500, className: "text" },
+    { title: 'gas上限', dataIndex: 'gasLimit', width: 150, className: "text" },
+    { title: '难度', dataIndex: 'totalDifficulty', width: 120, className: "text" },
+    { title: '前块地址', dataIndex: 'previousBlockAddress', ellipsis: true, className: "text" }
 ];
 export const columnsH2Chain = [
     { title: '高度', dataIndex: 'blockHeight', width: 80 , className: "text"},
-    { title: '区块hash值', dataIndex: 'blockHash', width: 300, className: "text" },
-    { title: '出块时间', dataIndex: 'timeStamp', width: 200, className: "text" },
-    { title: 'previousBlockHash', dataIndex: 'previousBlockHash', width: 300, className: "text" },
-    { title: 'signerPubkey', dataIndex: 'signerPubkey', ellipsis: true, className: "text" }
+    { title: '区块哈希', dataIndex: 'blockHash', width: 300, className: "text" },
+    { title: '时间戳', dataIndex: 'timeStamp', width: 200, className: "text" },
+    { title: '前块哈希', dataIndex: 'previousBlockHash', width: 300, className: "text" },
+    { title: '公钥', dataIndex: 'signerPubkey', ellipsis: true, className: "text" }
 ];

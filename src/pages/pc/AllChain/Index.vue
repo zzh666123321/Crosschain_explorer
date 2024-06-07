@@ -19,6 +19,7 @@
       </template>
       长安链
     </el-descriptions-item>
+
     <el-descriptions-item>
       <template #label>
         <i class="el-icon-location-outline"></i>
@@ -1389,4 +1390,9 @@ export default {
 .el-descriptions__body .el-descriptions__table .el-descriptions__cell {
   font-size: 28px;
 }
+
+h3 {
+  font-size: 25px;
+}
+
 </style>

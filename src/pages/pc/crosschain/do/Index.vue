@@ -67,7 +67,7 @@ export default {
 
 <template>
   <div>
-    <el-button @click="gotbroken()">发起跨链交易</el-button>
+    <el-button @click="gotbroken()"> <h3>发起跨链交易 </h3>></el-button>
   </div>
 </template>
 
@@ -121,4 +121,9 @@ div.el-select.el-select--focused {
   outline: none !important;
   box-shadow: none !important;
 }
+
+h3 {
+  font-size: 25px;
+}
+
 </style>
