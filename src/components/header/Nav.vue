@@ -4,9 +4,8 @@
             <div> 主页 </div>
         </router-link>
 
-      <router-link to="/lookup">
-        <div> 监管 </div>
-      </router-link>
+
+      <button @click="redirectToAnotherProject">监管</button>
 
         <!--<router-link to="/transactions">
             <div> 交易 </div>
@@ -55,6 +54,13 @@
     font-weight: bold;
 }
 </style>
-<script setup lang="ts">
-
+<script >
+export default {
+  methods: {
+    redirectToAnotherProject() {
+      const returnUrl = window.location.href;
+      window.location.href = 'http://www.baidu.com'
+    }
+  }
+}
 </script>
