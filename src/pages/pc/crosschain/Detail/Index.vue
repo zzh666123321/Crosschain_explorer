@@ -4,7 +4,6 @@
     <div class="info">
       <Item title="源链IP">{{ transaction?.srcIp}}</Item>
 
-
       <Item title="源链端口">{{ transaction?.srcPort }}</Item>
       <Item title="源链Hash">
         <div>{{ transaction?.srcHash }}</div>
@@ -27,10 +26,13 @@
 
 <script setup lang="ts">
 import { detail } from "@/api/transaction";
-import { ref, reactive } from "vue";
 import Title from "@/components/Title.vue";
 import Item from "@/components/Item.vue";
 import tx from "@/mock/singleTx.json";
+import {ref, reactive,onMounted } from "vue";
+import { useRoute } from "vue-router";
+import {sendCrossTx} from "@/api/block";
+
 const hasResult = ref(false);
 
 
@@ -38,12 +40,38 @@ const props = defineProps({
   hash: String,
 });
 
-const transaction = tx.data
-// const transaction = ref<API.TransactionDetail>({});
-
 const params = reactive({
   tx_hash: props.hash || "123",
 });
+
+const transaction = tx.data
+
+const route = useRoute();
+const data1 = route.query;
+const srcChainType = data1.srcChainType
+const dstChainType = data1.dstChainType
+console.log(data1)
+
+let data = reactive({});
+onMounted(() => {
+  sendCrossTx(String(srcChainType),String(dstChainType)).then((res) => {
+    console.log(data);
+    data = tx.data;
+    console.log(data);
+  });
+});
+
+
+
+
+
+// const transaction = ref<API.TransactionDetail>({});
+
+
+
+
+
+
 
 // detail(params).then((res) => {
 //   if (res && res.data.tx) {

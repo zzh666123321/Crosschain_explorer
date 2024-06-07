@@ -45,22 +45,22 @@ const params = reactive({
     id: props.height || '123'
 })
 
-const { data, error } = useBlockChainMakerDetail(params)
-console.log(data)
-console.log(typeof data)
+// const { data, error } = useBlockChainMakerDetail(params)
+// console.log(data)
+// console.log(typeof data)
 //
-// let data = reactive({
-//   data: {
-//   },
-// });
-// onMounted(() => {
-//   getBlocksDetail(String(props.height), "116.204.36.31:1000").then((res) => {
-//     console.log(data);
-//
-//     data.data = res.data;
-//     console.log(data.data);
-//   });
-// });
+let data = reactive({
+  data: {
+  },
+});
+onMounted(() => {
+  getBlocksDetail(String(props.height), "116.204.36.31:1000").then((res) => {
+    console.log(data);
+
+    data.data = res.data;
+    console.log(data.data);
+  });
+});
 
 
 // const  datadata = await getBlocksDetail(String(props.height),"116.204.36.31:1000")

@@ -17,7 +17,7 @@ export default defineConfig({
     proxy: {
       '/dev': {
         // target: 'http://106.14.244.78:8888', // zzp's public server
-        target: 'http://localhost:8080', // zzp's public server
+        target: 'http://localhost:8090', // zzp's public server
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/dev/, ''),

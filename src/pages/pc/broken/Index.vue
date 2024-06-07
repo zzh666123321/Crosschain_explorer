@@ -10,11 +10,13 @@
 
   </div>
   <div v-show="active == 0"> 请您选择源链类型
-    <el-cascader-panel :options="options"  v-model="resource"></el-cascader-panel>
+    <!-- <el-cascader-panel :options="options"  v-model="resource" ref="srcChainType" @change="changesrcChainType()"></el-cascader-panel> -->
+    <el-cascader-panel :options="options"  v-model="resource" ref="srcChainType"></el-cascader-panel>
   </div>
 
   <div v-show="active == 0"> 请您选择目的链类型
-    <el-cascader-panel :options="options" v-model="target"></el-cascader-panel>
+    <!-- <el-cascader-panel :options="options" v-model="target" ref="dstChainType"  @change="changedstChainType()"></el-cascader-panel> -->
+    <el-cascader-panel :options="options" v-model="target" ref="dstChainType"></el-cascader-panel>
   </div>
 
   <div v-show="active == 1">
@@ -28,8 +30,6 @@
         clearable>
     </el-input>
   </div>
-
-
 
 
 
@@ -50,7 +50,7 @@
   <div class="btn" v-show="active == 3" >
     <el-button
         type="primary"
-        @click="openFullScreen1"
+        @click="openFullScreen1()"
         class="btn_s"
         v-loading.fullscreen.lock="fullscreenLoading">
         确认提交
@@ -78,7 +78,7 @@
 
   <div class="btn" v-show="active == 3">
     <el-button type="primary" @click="openFullScreen1" class="btn_s">确认提交</el-button>
-    <el-button type="primary" @click="gotback()" class="btn_s">交易详情</el-button>
+    <!-- <el-button type="primary" @click="gotback()" class="btn_s">交易详情</el-button> -->
 
   </div>
 
@@ -93,6 +93,7 @@
 <script setup>
 import { ref, reactive, toRefs, computed } from "vue";
 import { useRouter} from 'vue-router'
+
 const router = useRouter()
 const active = ref(0);
 
@@ -125,11 +126,25 @@ const gobackHandle = () => {
   // ++active.value;
 };
 
+const openFullScreen1 = () => {
+
+  console.log(resource.value[0])
+  console.log(target.value[0])
+  router.push({path:'/crossTX', query: {srcChainType: String(resource.value[0]),dstChainType: String(target.value[0])  }});
+  
+};
+
+
+
 </script>
 <script>
 
 
 import {useRouter} from "vue-router";
+import {getCrossTx} from "@/api/block";
+
+
+
 
 export default {
 
@@ -138,14 +153,32 @@ export default {
       this.$router.push('/crossTX');
     },
 
-    openFullScreen1() {
+    // openFullScreen1() {
+    //   console.log(this.$resource.value[0])
+    //   console.log(target.value[0])
+    //   this.$router.push({path:'/crossTX', query: {srcChainType:  this.form.srcChainType,dstChainType:  this.form.dstChainType }});
+    // },
 
-      this.fullscreenLoading = true;
-      setTimeout(() => {
-        this.fullscreenLoading = false;
-      }, 10000);
+  //   changesrcChainType(){
+	// 	this.$nextTick(()=>{
+	// 		this.form.srcChainType = this.$refs['srcChainType'].label
+  //     console.log("===================")
+  //     console.log(this.$refs['srcChainType'])
+	// 	})
+  //   console.log(this.form.srcChainType)
+	// },
 
-    },
+  // changedstChainType(){
+	// 	this.$nextTick(()=>{
+	// 		this.form.dstChainType = this.$refs['dstChainType'].label
+	// 	})
+	// },
+      // this.fullscreenLoading = true;
+      // setTimeout(() => {
+      //   this.fullscreenLoading = false;
+      // }, 10000);
+
+    // },
     openFullScreen2() {
       const loading = this.$loading({
         lock: true,
@@ -164,6 +197,10 @@ export default {
 
   data() {
     return {
+      form:{
+        srcChainType: "",
+        dstChainType: ""
+      },
       fullscreenLoading: false,
       input: '',
       con: [{
@@ -500,7 +537,7 @@ export default {
             }]
           }]
       }, {
-        value: 'H2chain',
+        value: 'h2chain',
         label: '海河智链',
         children: [{
           value: '41',

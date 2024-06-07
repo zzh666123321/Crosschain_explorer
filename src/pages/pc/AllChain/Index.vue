@@ -1357,7 +1357,6 @@ export default {
 
   methods: {
     gotchainmaker(chainIP) {
-      
 
       this.$router.push({path:'/ChainMakerblocks',query: {chainIP: chainIP}});
       console.log(chainIP)

@@ -55,6 +55,34 @@ export async function getBlockDetail(chainIP: string){
     return resopnse.data;
 }
 
+
+export async function getCrossTx(){
+    const resopnse = await request<any>({
+        url: '/supply/crosschain/queryAllCrossTx',
+        method: 'get',
+        // data: { chainIp }
+    })
+    return resopnse.data;
+}
+
+export async function sendCrossTx(srcChainType:String,dstChainType:String){
+    const resopnse = await request<any>({
+        url: '/supply/crosschain/addCrossTx',
+        method: 'post',
+       data: { 
+        "srcIp":"116.204.36.31",
+        "srcPort":123,
+        "dstIp":"116.204.36.31",
+        "dstPort":2323,
+        "srcChainType":srcChainType,
+        "dstChainType":dstChainType
+        }
+    })
+    return resopnse.data;
+}
+
+
+
 export async function getBlocksDetail(blockHEIGHT: string,chainIP: string){
     const resopnse = await request<any>({
         url: '/supply/chain/checkBlockInfoheight',

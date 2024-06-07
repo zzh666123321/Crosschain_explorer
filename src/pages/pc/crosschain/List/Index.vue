@@ -23,14 +23,33 @@ import Search from "@/pages/pc/Home/Search/Index.vue";
 import {SEARCH_PLACE_HOLDER} from "@/common/constants";
 import PopupPage from '@/pages/pc/crosschain/do/Index.vue';
 import tx from  "@/mock/tx.json";
+import {getCrossTx} from "@/api/block";
+
 
 const placeholder=SEARCH_PLACE_HOLDER;
 
 
 
 // const transactions = ref<tx>(getTxList());
- const  transactions = tx.data.crossTransactions
+//  const  transactions = tx.data.crossTransactions
+// console.log(transactions)
+
+let transactions = ref([]);
+getCrossTx().then((res) => {
+  const datadata = res;
+  console.log("datadata=======" + datadata);
+  console.log(datadata);
+
+  const data12 = datadata.data.crossTransactions
+
+  console.log("data12=======" + data12);
+  console.log(data12);
+  console.log(typeof data12);
+
+  transactions.value = data12;
+});
 console.log(transactions)
+
 /**获取交易最新的状态 */
 // const tasks = transactions.value.map((txId) =>
 //   detail({ tx_hash: txId.tx_hash || "" })
