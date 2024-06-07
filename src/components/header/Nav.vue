@@ -36,7 +36,7 @@
 }
 
 .nav a {
-    color: gray;
+    color: grey;
 }
 
 .nav div {
