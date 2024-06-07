@@ -3,6 +3,11 @@
         <router-link to="/main">
             <div> 主页 </div>
         </router-link>
+
+      <router-link to="/main">
+        <div> 监管 </div>
+      </router-link>
+
         <!--<router-link to="/transactions">
             <div> 交易 </div>
         </router-link>
@@ -50,3 +55,6 @@
     font-weight: bold;
 }
 </style>
+<script setup lang="ts">
+
+</script>
