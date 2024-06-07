@@ -13,11 +13,12 @@
     { title: '加密方式', dataIndex: 'crypto_method', width: 120, align: 'center' },
 ];*/
 export const columns = [
-    { title: '交易ID', dataIndex: 'tx_hash', ellipsis: true },
-    //{ title: '区块高度', dataIndex: 'height', width: 100, align: 'center' },
-    { title: '合约', dataIndex: 'status', width: 90, align: 'center' },
-    { title: '起始链', dataIndex: 'from', ellipsis: true },
-    { title: ' ', dataIndex: 'to_icon', width: 30 },
-    { title: '目的链', dataIndex: 'to', ellipsis: true },
-    { title: '跨链方式', dataIndex: 'crypto_method', width: 120, align: 'center' },
+    { title: '交易ID', dataIndex: 'txId', width: 150 },
+    { title: '源链IP', dataIndex: 'srcIp', width: 150, },
+    { title: '源链端口', dataIndex: 'srcPort', width: 150,  },
+    { title: '源链Hash', dataIndex: 'srcHash', width: 150, },
+    { title: '目的链IP', dataIndex: 'dstIp', width: 150, },
+    { title: '目的链端口', dataIndex: 'dstPort', width: 150, },
+    { title: '目的链Hash', dataIndex: 'dstHash', ellipsis: true },
+
 ];

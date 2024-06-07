@@ -5,6 +5,8 @@
         </router-link>
 
 
+
+
       <button @click="redirectToAnotherProject">监管</button>
 
         <!--<router-link to="/transactions">
@@ -59,7 +61,7 @@ export default {
   methods: {
     redirectToAnotherProject() {
       const returnUrl = window.location.href;
-      window.location.href = 'http://www.baidu.com'
+      window.location.href = 'http://1.92.78.108:9080/'
     }
   }
 }

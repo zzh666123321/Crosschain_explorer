@@ -1,8 +1,6 @@
 <template>
     <Title title="跨链交易列表" />
 
-
-
   <div class="popup">
     <PopupPage></PopupPage>
 </div>
@@ -24,17 +22,23 @@ import { parallelWithLimit } from "@/utils/promises";
 import Search from "@/pages/pc/Home/Search/Index.vue";
 import {SEARCH_PLACE_HOLDER} from "@/common/constants";
 import PopupPage from '@/pages/pc/crosschain/do/Index.vue';
+import tx from  "@/mock/tx.json";
 
 const placeholder=SEARCH_PLACE_HOLDER;
-const transactions = ref<API.TransactionDetail[]>(getTxList());
 
+
+
+// const transactions = ref<tx>(getTxList());
+ const  transactions = tx.data.crossTransactions
+console.log(transactions)
 /**获取交易最新的状态 */
-const tasks = transactions.value.map((tx) =>
-  detail({ tx_hash: tx.tx_hash || "" })
-);
-parallelWithLimit(tasks, 3, (index, res) => {
-  transactions.value[index] = res.data.tx;
-});
+// const tasks = transactions.value.map((txId) =>
+//   detail({ tx_hash: txId.tx_hash || "" })
+//  );
+// parallelWithLimit(tasks, 3, (index, res) => {
+//   transactions.value[index] = res.data.tx;
+// });
+
 
 </script>
 
