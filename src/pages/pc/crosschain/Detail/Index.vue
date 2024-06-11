@@ -5,7 +5,7 @@
       <Item title="源链IP">{{ transaction?.data.srcIp}}</Item>
 
       <Item title="源链端口">{{ transaction?.data.srcPort }}</Item>
-      <Item title="源链Hash">
+      <Item title="源链发送Hash">
         <div>{{ transaction?.data.srcHash }}</div>
       </Item>
       <Item title="目的链IP">
@@ -14,8 +14,12 @@
       <Item title="目的链端口">
         <div>{{ transaction?.data.dstPort }}</div>
       </Item>
-      <Item title="目的链Hash">
+      <Item title="目的接收Hash">
         <div>{{ transaction?.data.dstHash }}</div>
+
+      </Item>
+      <Item title="源链确认Hash">
+        <div>{{ transaction?.data.responseHash }}</div>
 
       </Item>
 

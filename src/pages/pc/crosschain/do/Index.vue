@@ -67,7 +67,7 @@ export default {
 
 <template>
   <div>
-    <el-button @click="gotbroken()"> <h3>发起跨链交易 </h3>></el-button>
+    <el-button @click="gotbroken()"> <h3>发起跨链交易</h3></el-button>
   </div>
 </template>
 
