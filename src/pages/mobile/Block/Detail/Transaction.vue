@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { useBlockDetail } from "@/composition/useMock";
+
 import { reactive } from "vue"
 import { ListItemMap } from "@/components/mobile/types";
 import ListItem from "@/components/mobile/ListItem.vue";

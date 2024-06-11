@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { useBlockDetail } from "@/composition/useMock";
+
 import { reactive } from "vue"
 import ALItem from "@/components/mobile/AntListItem.vue";
 import { blkDetail } from "@/models/blockDetail"
