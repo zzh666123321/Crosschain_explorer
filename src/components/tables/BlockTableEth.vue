@@ -1,8 +1,8 @@
 <template>
-    <a-table :columns="columnsEth" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }">
+    <a-table :columns="columnsEth" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }" :data1="data1">
         <template #bodyCell="{ column, text }">
             <template v-if="column.dataIndex === 'blockHeight'">
-                <router-link :to="`/${from}/${text}`">{{ text }}</router-link>
+                <router-link :to="{path:`/${from}/${text}`,query:{data1}}">{{ text }}</router-link>
             </template>
 
         </template>
@@ -14,6 +14,7 @@ import { columnsEth } from "@/models/block";
 import { PropType } from "vue";
 defineProps({
     data: Array as PropType<any[] | null>,
+    data1: String,
     from: String,
 })
 

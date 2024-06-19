@@ -8,7 +8,7 @@
     </h3>
   </div>
    <Search :placeholder="placeholder1"></Search>
-  <BlockTable :type="columnsH2Chain" :from = "from" :data="data"></BlockTable>
+  <BlockTable :type="columnsH2Chain" :from = "from" :data="data" :data1="query"></BlockTable>
 </template>
 
 <script lang="ts" setup>
@@ -41,13 +41,14 @@ const params = reactive({
 
 
 const data1 = route.query
+const query = String(data1.chainIP)
 
 // const { data, error } = useBlockListH2Chain(params);
 // console.log(data)
 // console.log(typeof data)
 
 let data = ref([]);
-getBlockDetail("116.204.36.31:8000").then((res) => {
+getBlockDetail(String(data1.chainIP)).then((res) => {
   const datadata = res;
   console.log("datadata=======" + datadata);
   console.log(datadata);

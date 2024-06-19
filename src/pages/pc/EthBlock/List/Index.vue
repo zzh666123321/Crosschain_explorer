@@ -5,7 +5,7 @@
   <div>
     <h3>IP和端口号是：{{ data1.chainIP}}</h3>
   </div>  <Search :placeholder="placeholder1"></Search>
-  <BlockTable :type="columnsEth" :from="from" :data="data"></BlockTable>
+  <BlockTable :type="columnsEth" :from="from" :data="data" :data1="query"></BlockTable>
 </template>
 
 <script lang="ts" setup>
@@ -42,13 +42,14 @@ const from = 'ethBlock'
 
 
 const data1 = route.query
+const query = String(data1.chainIP)
 
 // const { data, error } = useBlockListEth(params);
 // console.log(data)
 // console.log(typeof data)
 
 let data = ref([]);
-getBlockDetail("116.204.36.31:10012").then((res) => {
+getBlockDetail(String(data1.chainIP)).then((res) => {
   const datadata = res;
   console.log("datadata=======" + datadata);
   console.log(datadata);

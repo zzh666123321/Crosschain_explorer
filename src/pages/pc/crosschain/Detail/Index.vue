@@ -57,11 +57,19 @@ const params = reactive({
 
 var srcChainType = "h2chain"
 var dstChainType = "h2chain"
+var src = "116.204.36.193:8000"
+var dst = "116.204.36.193:8000"
 
 const route = useRoute();
 const data1 = route.query;
+
 srcChainType = String(data1.srcChainType)
 dstChainType = String(data1.dstChainType)
+
+src = String(data1.src)
+dst = String(data1.dst)
+
+
 console.log(data1)
 
 let transaction = reactive({
@@ -69,7 +77,7 @@ let transaction = reactive({
   },
 });
 onMounted(() => {
-  sendCrossTx(String(srcChainType),String(dstChainType)).then((res) => {
+  sendCrossTx(String(srcChainType),String(dstChainType),String(src),String(dst)).then((res) => {
     transaction.data = res.data;
     console.log(transaction);
   });

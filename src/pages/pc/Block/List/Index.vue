@@ -4,7 +4,7 @@
 
   <div><h3>IP和端口号是：{{ data1.chainIP }}</h3></div>
   <Search :placeholder="placeholder1"></Search>
-  <BlockTable :type="columnsChainMaker" :from="from" :data="data"></BlockTable>
+  <BlockTable :type="columnsChainMaker" :from="from" :data="data" :data1="query"></BlockTable>
   <!-- <BlockTable :type="type" :from="from" :data="data1"></BlockTable> -->
 </template>
 
@@ -30,6 +30,7 @@ import { wrapResponse } from "@/api/request";
 const router = useRouter();
 const route = useRoute();
 const data1 = route.query;
+const query = String(data1.chainIP)
 
 const from = "block";
 
@@ -45,7 +46,7 @@ const params = reactive({
 // console.log(typeof data)
 
 let data = ref([]);
-getBlockDetail("116.204.36.31:1000").then((res) => {
+getBlockDetail(String(data1.chainIP)).then((res) => {
   const datadata = res;
   console.log("datadata=======" + datadata);
   console.log(datadata);

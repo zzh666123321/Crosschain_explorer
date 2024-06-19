@@ -130,7 +130,9 @@ const openFullScreen1 = () => {
 
   console.log(resource.value[0])
   console.log(target.value[0])
-  router.push({path:'/crossTX', query: {srcChainType: String(resource.value[0]),dstChainType: String(target.value[0])  }});
+  console.log(resource.value[2])
+  console.log(target.value[2])
+  router.push({path:'/crossTX', query: {srcChainType: String(resource.value[0]),dstChainType: String(target.value[0]),src:String(resource.value[2]),dst:String(target.value[2]) }});
   
 };
 

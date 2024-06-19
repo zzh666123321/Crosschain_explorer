@@ -65,15 +65,17 @@ export async function getCrossTx(){
     return resopnse.data;
 }
 
-export async function sendCrossTx(srcChainType:String,dstChainType:String){
+export async function sendCrossTx(srcChainType:String,dstChainType:String,src:String,dst:String){
     const resopnse = await request<any>({
         url: '/supply/crosschain/addCrossTx',
         method: 'post',
        data: { 
-        "srcIp":"116.204.36.31",
-        "srcPort":123,
-        "dstIp":"116.204.36.31",
-        "dstPort":2323,
+        "src": src,
+        "dst": dst,
+        // "srcIp":"116.204.36.31",
+        // "srcPort":123,
+        // "dstIp":"116.204.36.31",
+        // "dstPort":2323,
         "srcChainType":srcChainType,
         "dstChainType":dstChainType
         }
