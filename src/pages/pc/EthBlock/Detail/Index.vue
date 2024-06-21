@@ -35,6 +35,14 @@ import shuffle from "@/utils/shuffle";
 import { wrapResponse } from "@/api/request";
 import txs from '@/mock/transactions.json'
 import { getBlocksDetail } from "@/api/block";
+import { useRouter, useRoute } from "vue-router";
+
+const router = useRouter();
+const route = useRoute();
+const data1 = route.query;
+const query = String(data1.chainIP)
+console.log("query============")
+console.log(query)
 
 const props = defineProps({
     height: String
@@ -50,12 +58,14 @@ const params = reactive({
 // console.log(data)
 // console.log(typeof data)
 //
+
+
 let data = reactive({
   data: {
   },
 });
 onMounted(() => {
-  getBlocksDetail(String(props.height), "116.204.36.31:10012").then((res) => {
+  getBlocksDetail(String(props.height), String(query)).then((res) => {
     console.log(data);
 
     data.data = res.data;

@@ -2,7 +2,7 @@
     <a-table :columns="columnsH2Chain" :data-source="data" size="middle" :pagination="{ position: ['bottomCenter'] }" :data1="data1">
         <template #bodyCell="{ column, text }">
             <template v-if="column.dataIndex === 'blockHeight'">
-                <router-link :to="{path:`/${from}/${text}`,query:{data1}}">{{ text }}</router-link>
+                <router-link :to="{path:`/${from}/${text}`,query:{chainIP: data1}}">{{ text }}</router-link>
             </template>
         </template>
     </a-table>

@@ -6,7 +6,7 @@
 
             <template v-if="column.dataIndex === 'blockHeight'">
 
-                <router-link :to="{path:`/${from}/${text}`,query:{data1}}">{{ text }}</router-link>
+                <router-link :to="{path:`/${from}/${text}`,query:{chainIP: data1}}">{{ text }}</router-link>
 
             </template>
 

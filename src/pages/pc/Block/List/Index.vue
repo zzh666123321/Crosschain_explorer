@@ -30,7 +30,11 @@ import { wrapResponse } from "@/api/request";
 const router = useRouter();
 const route = useRoute();
 const data1 = route.query;
+console.log(data1)
+console.log(data1.chainIP)
 const query = String(data1.chainIP)
+console.log("query==================")
+console.log(query)
 
 const from = "block";
 
