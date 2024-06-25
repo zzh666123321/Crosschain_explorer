@@ -19,4 +19,9 @@ defineProps({
 })
 
 </script>
+<style>
 
+*{
+  font-size: 25px !important;
+}
+</style>

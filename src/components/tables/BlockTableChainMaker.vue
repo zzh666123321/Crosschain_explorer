@@ -28,10 +28,9 @@ defineProps({
 
 </script>
 
-<style scoped>
-.test {
-  font-size: 30px ;
+<style>
+
+*{
+  font-size: 25px !important;
 }
-
-
 </style>

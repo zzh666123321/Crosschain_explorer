@@ -91,7 +91,7 @@ export default defineComponent({
 }
 
 h1 {
-    font-size: 120px;
+    font-size: 120px!important;
 }
 
 h2 {
