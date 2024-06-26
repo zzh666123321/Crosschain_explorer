@@ -31,6 +31,7 @@ defineProps({
 <style>
 
 *{
+
   font-size: 25px !important;
 }
 </style>
