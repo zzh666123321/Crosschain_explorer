@@ -5,7 +5,7 @@
         </router-link>
 
       <div  @click.capture="redirectToAnotherProject">   <h3> 监管  </h3></div>
-
+      <div  @click.capture="redirectToAnotherProject2">   <h3> 接入  </h3></div>
 
 
 
@@ -69,7 +69,14 @@ export default {
     redirectToAnotherProject() {
       const returnUrl = window.location.href;
       window.location.href = 'http://1.92.78.108:9080/'
+    },
+
+    redirectToAnotherProject2() {
+      const returnUrl = window.location.href;
+      window.location.href = 'http://101.200.160.112:8000/index/'
     }
+
+
   }
 }
 </script>
