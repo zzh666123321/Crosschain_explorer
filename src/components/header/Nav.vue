@@ -73,7 +73,7 @@ export default {
 
     redirectToAnotherProject2() {
       const returnUrl = window.location.href;
-      window.location.href = 'http://101.200.160.112:8000/index/'
+      window.location.href = 'http://101.200.160.112:8000/'
     }
 
 
