@@ -1348,6 +1348,919 @@
         <el-button @click="gotH2Chain('192.168.0.119:8000')">跳转</el-button>
     </el-descriptions-item>
 
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      01
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.224:1000
+      <el-button @click="gotBTchain('192.168.0.224:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      02
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.12:1000
+      <el-button @click="gotBTchain('192.168.0.12:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      03
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.218:1000
+      <el-button @click="gotBTchain('192.168.0.218:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      04
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.33:1000
+      <el-button @click="gotBTchain('192.168.0.33:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      05
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.246:1000
+      <el-button @click="gotBTchain('192.168.0.246:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      06
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.69:1000
+      <el-button @click="gotBTchain('192.168.0.69:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      07
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.87:1000
+      <el-button @click="gotBTchain('192.168.0.87:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      08
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.74:1000
+      <el-button @click="gotBTchain('192.168.0.74:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      09
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.179:1000
+      <el-button @click="gotBTchain('192.168.0.179:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      10
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.166:1000
+      <el-button @click="gotBTchain('192.168.0.166:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      11
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.146:1000
+      <el-button @click="gotBTchain('192.168.0.146:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      12
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.128:1000
+      <el-button @click="gotBTchain('192.168.0.128:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      13
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.192:1000
+      <el-button @click="gotBTchain('192.168.0.192:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      14
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.73:1000
+      <el-button @click="gotBTchain('192.168.0.73:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      15
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.115:1000
+      <el-button @click="gotBTchain('192.168.0.115:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      16
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.173:1000
+      <el-button @click="gotBTchain('192.168.0.173:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      17
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.93:1000
+      <el-button @click="gotBTchain('192.168.0.93:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      18
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.32:1000
+      <el-button @click="gotBTchain('192.168.0.32:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      19
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.34:1000
+      <el-button @click="gotBTchain('192.168.0.34:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      20
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      布比链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.119:1000
+      <el-button @click="gotBTchain('192.168.0.119:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      01
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.224:1000
+      <el-button @click="gotfabchain('192.168.0.224:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      02
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.12:1000
+      <el-button @click="gotfabchain('192.168.0.12:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      03
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.218:1000
+      <el-button @click="gotfabchain('192.168.0.218:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      04
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.33:1000
+      <el-button @click="gotfabchain('192.168.0.33:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      05
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.246:1000
+      <el-button @click="gotfabchain('192.168.0.246:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      06
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.69:1000
+      <el-button @click="gotfabchain('192.168.0.69:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      07
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.87:1000
+      <el-button @click="gotfabchain('192.168.0.87:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      08
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.74:1000
+      <el-button @click="gotfabchain('192.168.0.74:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      09
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.179:1000
+      <el-button @click="gotfabchain('192.168.0.179:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      10
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.166:1000
+      <el-button @click="gotfabchain('192.168.0.166:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      11
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.146:1000
+      <el-button @click="gotfabchain('192.168.0.146:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      12
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.128:1000
+      <el-button @click="gotfabchain('192.168.0.128:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      13
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.192:1000
+      <el-button @click="gotfabchain('192.168.0.192:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      14
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.73:1000
+      <el-button @click="gotfabchain('192.168.0.73:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      15
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.115:1000
+      <el-button @click="gotfabchain('192.168.0.115:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      16
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.173:1000
+      <el-button @click="gotfabchain('192.168.0.173:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      17
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.93:1000
+      <el-button @click="gotfabchain('192.168.0.93:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      18
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.32:1000
+      <el-button @click="gotfabchain('192.168.0.32:1000')">跳转</el-button>
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      19
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.34:1000
+      <el-button @click="gotfabchain('192.168.0.34:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-user"></i>
+        链号
+      </template>
+      20
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-mobile-phone"></i>
+        链的种类
+      </template>
+      fabric链
+    </el-descriptions-item>
+    <el-descriptions-item>
+      <template #label>
+        <i class="el-icon-location-outline"></i>
+        IP号与端口号
+      </template>
+      192.168.0.119:1000
+      <el-button @click="gotfabchain('192.168.0.119:1000')">跳转</el-button>
+    </el-descriptions-item>
+
+
+
   </el-descriptions>
 
 
@@ -1373,6 +2286,15 @@ export default {
       // this.$router.push({ path: '/ChainMakerblocks'})
       // this.$router.push({ path: '/ChainMakerblocks', query: { chainIP: 'ChainMaker' }})
     },
+    gotBTchain(chainIP) {
+      this.$router.push({path:'/BTblocks',query: {chainIP: chainIP}});
+      console.log(chainIP)
+    },
+    gotfabchain(chainIP) {
+      this.$router.push({path:'/fabblocks',query: {chainIP: chainIP}});
+      console.log(chainIP)
+    },
+
 
     gotEthchain(chainIP) {
       this.$router.push({path:'/Ethblocks',query: {chainIP: chainIP}});

@@ -28,6 +28,14 @@ export const routes = [
         component: () => import("@/pages/pc/EthBlock/List/Index.vue")
     },
     {
+        path: '/BTblocks',
+        component: () => import("@/pages/pc/BTBlock/List/Index.vue")
+    },
+    {
+        path: '/fabblocks',
+        component: () => import("@/pages/pc/fabBlock/List/Index.vue")
+    },
+    {
         path: '/broken',name:'broken',
         component: () => import("@/pages/pc/broken/Index.vue")
     },
