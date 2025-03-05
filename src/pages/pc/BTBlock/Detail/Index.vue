@@ -2,7 +2,11 @@
   <Title title="布比链区块详情"></Title>
   <div>
     <Item title="高度">{{ height }}</Item>
-    <Item title="难度">{{ data?.data.difficulty }}</Item>
+    <Item title="区块哈希">{{ data?.data.hash }}</Item>
+    <Item title="时间戳">{{ data?.data.closeTime }}</Item>
+    <Item title="前块哈希">{{ data?.data.previousHash }}</Item>
+    <Item title="验证哈希">{{ data?.data.validatorsHash}}</Item>
+    <!-- <Item title="难度">{{ data?.data.difficulty }}</Item>
     <Item title="矿工">{{ data?.data.minerAddress }}</Item>
 
     <Item title="gas上限">{{ data?.data.gasLimit }}</Item>
@@ -13,7 +17,7 @@
     <Item title="交易数">{{ data?.data.transactionCount }}</Item>
     <Item title="区块奖励">{{ data?.data.blockReward }}</Item>
     <Item title="区块大小">{{ data?.data.blockSize }}</Item>
-    <Item title="时间戳">{{ data?.data.timestamp }}</Item>
+    <Item title="时间戳">{{ data?.data.timestamp }}</Item> -->
   </div>
   <!-- <a-divider />
   <h2>交易列表</h2>

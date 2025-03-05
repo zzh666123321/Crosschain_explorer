@@ -33,3 +33,18 @@ export const columnsH2Chain = [
     { title: '前块哈希', dataIndex: 'previousBlockHash', width: 300, className: "text" },
     { title: '公钥', dataIndex: 'signerPubkey', ellipsis: true, className: "text" }
 ];
+export const columnsBTChain = [
+    { title: '高度', dataIndex: 'blockHeight', width: 80 , className: "text"},
+    { title: '区块哈希', dataIndex: 'hash', width: 300, className: "text" },
+    { title: '时间戳', dataIndex: 'closeTime', width: 200, className: "text" },
+    { title: '前块哈希', dataIndex: 'previousHash', width: 300, className: "text" },
+    { title: '验证哈希', dataIndex: 'validatorsHash', ellipsis: true, className: "text" }
+];
+
+export const columnsFabric = [
+    { title: '高度', dataIndex: 'blockHeight', width: 80 , className: "text"},
+    { title: '区块哈希', dataIndex: 'blockHash', width: 300, className: "text" },
+    { title: '时间戳', dataIndex: 'timeStamp', width: 200, className: "text" },
+    { title: '前块哈希', dataIndex: 'previousBlockHash', width: 300, className: "text" },
+    { title: '公钥', dataIndex: 'signerPubkey', ellipsis: true, className: "text" }
+];

@@ -28,8 +28,11 @@
 包管理：`pnpm`，没有的话执行 `npm install -g pnpm` 安装一下
 
 ``` bash
-$ pnpm install  # 安装依赖
-$ pnpm run dev  # 启动
+# $ pnpm install  # 安装依赖
+# $ pnpm run dev  # 启动
+$ npm install  # 安装依赖
+$ npm run start  # 启动
+
 ```
 
 组件库：[Ant Design](https://antdv.com/components/overview) `v3.2.3`

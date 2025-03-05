@@ -1,19 +1,22 @@
 <template>
   <Title title="fabric区块详情"></Title>
   <div>
-    <Item title="高度">{{ height }}</Item>
-    <Item title="难度">{{ data?.data.difficulty }}</Item>
-    <Item title="矿工">{{ data?.data.minerAddress }}</Item>
-
-    <Item title="gas上限">{{ data?.data.gasLimit }}</Item>
-    <Item title="总难度">{{ data?.data.totalDifficulty }}</Item>
-    <Item title="前块地址">{{ data?.data.previousBlockAddress }}</Item>
-    <Item title="消耗gas">{{ data?.data.gasUsed }}</Item>
-    <Item title="交易根">{{ data?.data.stateRoot }}</Item>
+    <Item title="区块高度">{{ height }}</Item>
+    <Item title="时间戳">{{ data?.data.timeStamp }}</Item>
+    <Item title="交易状态根">{{
+      data?.data.merkleTreeRootOfTransactionState
+    }}</Item>
+    <Item title="块哈希">{{ data?.data.blockHash }}</Item>
+    <Item title="前块哈希">{{ data?.data.previousBlockHash }}</Item>
+    <Item title="公钥">{{ data?.data.signerPubkey }}</Item>
+    <Item title="交易根">{{
+      data?.data.merkleTreeRootOfTransactions
+    }}</Item>
     <Item title="交易数">{{ data?.data.transactionCount }}</Item>
-    <Item title="区块奖励">{{ data?.data.blockReward }}</Item>
-    <Item title="区块大小">{{ data?.data.blockSize }}</Item>
-    <Item title="时间戳">{{ data?.data.timestamp }}</Item>
+    <Item title="块大小">{{ data?.data.blockSize }}</Item>
+    <Item title="全局根">{{
+      data?.data.merkleTreeRootOfWorldState
+    }}</Item>
   </div>
   <!-- <a-divider />
   <h2>交易列表</h2>

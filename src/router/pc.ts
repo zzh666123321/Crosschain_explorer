@@ -64,6 +64,16 @@ export const routes = [
         props: true
     },
     {
+        path: '/btblock/:height',
+        component: () => import("@/pages/pc/BTBlock/Detail/Index.vue"),
+        props: true
+    },
+    {
+        path: '/fabblock/:height',
+        component: () => import("@/pages/pc/fabBlock/Detail/Index.vue"),
+        props: true
+    },
+    {
         path: '/address/:address',
         component: () => import("@/pages/pc/Address/Index.vue"),
         props: true

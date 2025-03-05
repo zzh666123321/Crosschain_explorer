@@ -30,7 +30,7 @@ import { wrapResponse } from "@/api/request";
 
 const router = useRouter()
 const route = useRoute()
-const from= 'h2block'
+const from= 'fabblock'
 
 const placeholder1=CHOOSE_PLACE_HOLDER;
 const params = reactive({
