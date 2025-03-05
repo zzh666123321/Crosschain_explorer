@@ -6,6 +6,10 @@
     <Item title="时间戳">{{ data?.data.closeTime }}</Item>
     <Item title="前块哈希">{{ data?.data.previousHash }}</Item>
     <Item title="验证哈希">{{ data?.data.validatorsHash}}</Item>
+    <Item title="账户状态树哈希">{{ data?.data.accountTreeHash}}</Item>
+    <Item title="共识哈希">{{ data?.data.consensusValueHash}}</Item>
+    <Item title="版本号">{{ data?.data.version}}</Item>
+
     <!-- <Item title="难度">{{ data?.data.difficulty }}</Item>
     <Item title="矿工">{{ data?.data.minerAddress }}</Item>
 
