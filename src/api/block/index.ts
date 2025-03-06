@@ -65,19 +65,33 @@ export async function getCrossTx(){
     return resopnse.data;
 }
 
-export async function sendCrossTx(srcChainType:String,dstChainType:String,src:String,dst:String){
+// export async function sendCrossTx(srcChainType:String,dstChainType:String,src:String,dst:String){
+//     const resopnse = await request<any>({
+//         url: '/supply/crosschain/addCrossTx',
+//         method: 'post',
+//        data: { 
+//         "src": src,
+//         "dst": dst,
+//         // "srcIp":"116.204.36.31",
+//         // "srcPort":123,
+//         // "dstIp":"116.204.36.31",
+//         // "dstPort":2323,
+//         "srcChainType":srcChainType,
+//         "dstChainType":dstChainType
+//         }
+//     })
+//     return resopnse.data;
+// }
+export async function sendCrossTx(dstChainType:String,dstIp:String,relayIp:String,srcChainType:String,scrIp:String){
     const resopnse = await request<any>({
-        url: '/supply/crosschain/addCrossTx',
+        url: '/supply/crosschain/execute/full',
         method: 'post',
        data: { 
-        "src": src,
-        "dst": dst,
-        // "srcIp":"116.204.36.31",
-        // "srcPort":123,
-        // "dstIp":"116.204.36.31",
-        // "dstPort":2323,
         "srcChainType":srcChainType,
-        "dstChainType":dstChainType
+        "dstChainType":dstChainType,
+        "srcIp":scrIp,
+        "dstIp":dstIp,
+        "relayIp":relayIp
         }
     })
     return resopnse.data;

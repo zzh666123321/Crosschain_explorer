@@ -130,10 +130,18 @@ const openFullScreen1 = () => {
 
   console.log(resource.value[0])
   console.log(target.value[0])
+  console.log(resource.value[1])
+  console.log(target.value[1])
   console.log(resource.value[2])
   console.log(target.value[2])
-  router.push({path:'/crossTX', query: {srcChainType: String(resource.value[0]),dstChainType: String(target.value[0]),src:String(resource.value[2]),dst:String(target.value[2]) }});
-  
+  // router.push({path:'/crossTX', query: {srcChainType: String(resource.value[0]),dstChainType: String(target.value[0]),src:String(resource.value[2]),dst:String(target.value[2]) }});
+  router.push({path:'/crossTX', query: {
+    "dstChainType": "ethereum",
+   "dstIp": "192.168.0.2",
+   "relayIp": "192.168.100",
+   "srcChainType": "h2chain",
+   "srcIp": "192.168.0.2"
+  }});
 };
 
 
