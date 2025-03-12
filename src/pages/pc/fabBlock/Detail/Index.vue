@@ -1,5 +1,5 @@
 <template>
-  <Title title="fabric区块详情"></Title>
+  <Title title="联通链区块详情"></Title>
   <div>
     <Item title="区块高度">{{ height }}</Item>
     <Item title="时间戳">{{ data?.data.timeStamp }}</Item>

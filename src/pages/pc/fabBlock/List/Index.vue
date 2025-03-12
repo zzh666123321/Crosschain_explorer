@@ -1,6 +1,6 @@
 <template>
 
-  <Title title="fabric链详情" />
+  <Title title="联通链详情" />
 
   <div>
     <h3>
