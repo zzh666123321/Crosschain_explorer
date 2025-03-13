@@ -2,21 +2,17 @@
   <Title title="联通链区块详情"></Title>
   <div>
     <Item title="区块高度">{{ height }}</Item>
-    <Item title="时间戳">{{ data?.data.timeStamp }}</Item>
-    <Item title="交易状态根">{{
-      data?.data.merkleTreeRootOfTransactionState
-    }}</Item>
-    <Item title="块哈希">{{ data?.data.blockHash }}</Item>
-    <Item title="前块哈希">{{ data?.data.previousBlockHash }}</Item>
-    <Item title="公钥">{{ data?.data.signerPubkey }}</Item>
-    <Item title="交易根">{{
-      data?.data.merkleTreeRootOfTransactions
-    }}</Item>
-    <Item title="交易数">{{ data?.data.transactionCount }}</Item>
-    <Item title="块大小">{{ data?.data.blockSize }}</Item>
-    <Item title="全局根">{{
-      data?.data.merkleTreeRootOfWorldState
-    }}</Item>
+    <Item title="时间戳">{{ data?.data.createdAt }}</Item>
+    <Item title="区块哈希">{{ data?.data.hash }}</Item>
+    <Item title="数据哈希">{{ data?.data.dataHash }}</Item>
+    <Item title="前块哈希">{{ data?.data.previousHash }}</Item>
+    <Item title="后块哈希">{{ data?.data.nextHash }}</Item>
+    <Item title="通道名">{{ data?.data.channelName }}</Item>
+    <Item title="交易数量">{{ data?.data.txCount }}</Item>
+    <Item title="最新配置号">{{ data?.data.lastConfigIndex }}</Item>
+
+    
+
   </div>
   <!-- <a-divider />
   <h2>交易列表</h2>

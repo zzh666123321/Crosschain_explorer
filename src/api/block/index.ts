@@ -44,7 +44,9 @@ export async function sendPostRequest(chainIp: string) {
 }
 
 export async function getBlockDetail(chainIP: string){
-    const authorizationToken = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmNGFiMTQwZDM3ZGQ0MDI5YTY1MzRiYzhhM2RkMGJmMiIsIm5hbWUiOiJ6MSIsInJvbGUiOiJ0ZW5hbnQiLCJ0b2tlbkNyZWF0ZVRpbWUiOjE3NDE3NjY1NDIsInBhc3N3b3JkRXhwaXJhdGlvbiI6MTc0MzQwNTI2MiwiZXhwaXJlZEF0IjoxNzQxNzY4MzQyfQ.rHc-5Al-_rD5hifoim5_PD5Y6xlp4x1190aT_-iRKNU";
+    const authorizationToken = "\
+    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmNGFiMTQwZDM3ZGQ0MDI5YTY1MzRiYzhhM2RkMGJmMiIsIm5hbWUiOiJ6MSIsInJvbGUiOiJ0ZW5hbnQiLCJ0b2tlbkNyZWF0ZVRpbWUiOjE3NDE4NDY5NTcsInBhc3N3b3JkRXhwaXJhdGlvbiI6MTc0MzQwNTI2MiwiZXhwaXJlZEF0IjoxNzQxODQ4NzU3fQ.B3VPYm98G2R2nebS_RMZ5CAEEuVicexwaKvwARD90EM\
+    ";
     const resopnse = await request<any>({
         url: '/supply/chain/checkNewblock',
         method: 'post',
@@ -60,7 +62,9 @@ export async function getBlockDetail(chainIP: string){
 }
 
 export async function getBlocksDetail(blockHEIGHT: string,chainIP: string){
-    const authorizationToken = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmNGFiMTQwZDM3ZGQ0MDI5YTY1MzRiYzhhM2RkMGJmMiIsIm5hbWUiOiJ6MSIsInJvbGUiOiJ0ZW5hbnQiLCJ0b2tlbkNyZWF0ZVRpbWUiOjE3NDE3NjY1NDIsInBhc3N3b3JkRXhwaXJhdGlvbiI6MTc0MzQwNTI2MiwiZXhwaXJlZEF0IjoxNzQxNzY4MzQyfQ.rHc-5Al-_rD5hifoim5_PD5Y6xlp4x1190aT_-iRKNU"
+    const authorizationToken = "\
+    Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmNGFiMTQwZDM3ZGQ0MDI5YTY1MzRiYzhhM2RkMGJmMiIsIm5hbWUiOiJ6MSIsInJvbGUiOiJ0ZW5hbnQiLCJ0b2tlbkNyZWF0ZVRpbWUiOjE3NDE4NDY5NTcsInBhc3N3b3JkRXhwaXJhdGlvbiI6MTc0MzQwNTI2MiwiZXhwaXJlZEF0IjoxNzQxODQ4NzU3fQ.B3VPYm98G2R2nebS_RMZ5CAEEuVicexwaKvwARD90EM\
+    ";
     const resopnse = await request<any>({
         url: '/supply/chain/checkBlockInfoheight',
         method: 'post',

@@ -48,7 +48,7 @@
         IP号与端口号
       </template>
       192.168.0.3:8088
-        <el-button @click="gotchainmaker('192.168.0.13:8088')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.3:8088')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -72,7 +72,7 @@
         IP号与端口号
       </template>
       192.168.0.4:8088
-        <el-button @click="gotchainmaker('192.168.0.4:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.4:8088')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -95,7 +95,7 @@
         IP号与端口号
       </template>
       192.168.0.5:8088
-        <el-button @click="gotchainmaker('192.168.0.5:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.5:8088')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -120,7 +120,7 @@
         IP号与端口号
       </template>
       192.168.0.6:8088
-        <el-button @click="gotchainmaker('192.168.0.6:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.6:8088')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -144,7 +144,7 @@
         IP号与端口号
       </template>
       192.168.0.7:8088
-        <el-button @click="gotchainmaker('192.168.0.7:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.7:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -166,7 +166,7 @@
         IP号与端口号
       </template>
       192.168.0.8:8088
-        <el-button @click="gotchainmaker('192.168.0.8:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.8:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -188,7 +188,7 @@
         IP号与端口号
       </template>
       192.168.0.9:8088
-        <el-button @click="gotchainmaker('192.168.0.9:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.9:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -210,7 +210,7 @@
         IP号与端口号
       </template>
       192.168.0.10:8088
-        <el-button @click="gotchainmaker('192.168.0.10:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.10:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -232,7 +232,7 @@
         IP号与端口号
       </template>
       192.168.0.11:8088
-        <el-button @click="gotchainmaker('192.168.0.11:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.11:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -254,7 +254,7 @@
         IP号与端口号
       </template>
       192.168.0.12:8088
-        <el-button @click="gotchainmaker('192.168.0.11:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.12:8088')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -277,7 +277,7 @@
         IP号与端口号
       </template>
       192.168.0.13:8088
-        <el-button @click="gotchainmaker('192.168.0.12:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.13:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -299,7 +299,7 @@
         IP号与端口号
       </template>
       192.168.0.14:8088
-        <el-button @click="gotchainmaker('192.168.0.13:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.14:8088')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -322,7 +322,7 @@
         IP号与端口号
       </template>
       192.168.0.15:8088
-        <el-button @click="gotchainmaker('192.168.0.14:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.15:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -344,7 +344,7 @@
         IP号与端口号
       </template>
       192.168.0.16:8088
-        <el-button @click="gotchainmaker('192.168.0.15:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.16:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -366,7 +366,7 @@
         IP号与端口号
       </template>
       192.168.0.17:8088
-        <el-button @click="gotchainmaker('192.168.0.16:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.17:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -388,7 +388,7 @@
         IP号与端口号
       </template>
       192.168.0.18:8088
-        <el-button @click="gotchainmaker('192.168.0.17:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.18:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -410,7 +410,7 @@
         IP号与端口号
       </template>
       192.168.0.19:8088
-        <el-button @click="gotchainmaker('192.168.0.18:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.19:8088')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -432,7 +432,7 @@
         IP号与端口号
       </template>
       192.168.0.20:8088
-        <el-button @click="gotchainmaker('192.168.0.19:1000')">跳转</el-button>
+        <el-button @click="gotchainmaker('192.168.0.20:8088')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -457,7 +457,7 @@
         IP号与端口号
       </template>
       192.168.0.21:8088
-      <el-button @click="gotchainmaker('192.168.0.20:1000')">跳转</el-button>
+      <el-button @click="gotchainmaker('192.168.0.21:8088')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -482,7 +482,7 @@
         IP号与端口号
       </template>
       192.168.0.2:8086
-        <el-button @click="gotEthchain('192.168.0.21:8086')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.2:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -504,7 +504,7 @@
         IP号与端口号
       </template>
       192.168.0.3:8086
-        <el-button @click="gotEthchain('192.168.0.12:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.3:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -526,7 +526,7 @@
         IP号与端口号
       </template>
       192.168.0.4:8086
-        <el-button @click="gotEthchain('192.168.0.218:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.4:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -548,7 +548,7 @@
         IP号与端口号
       </template>
       192.168.0.5:8086
-        <el-button @click="gotEthchain('192.168.0.33:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.5:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -570,7 +570,7 @@
         IP号与端口号
       </template>
       192.168.0.6:8086
-        <el-button @click="gotEthchain('192.168.0.246:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.6:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -592,7 +592,7 @@
         IP号与端口号
       </template>
       192.168.0.7:8086
-        <el-button @click="gotEthchain('192.168.0.69:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.7:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -614,7 +614,7 @@
         IP号与端口号
       </template>
       192.168.0.8:8086
-        <el-button @click="gotEthchain('192.168.0.87:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.8:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -636,7 +636,7 @@
         IP号与端口号
       </template>
       192.168.0.9:8086
-        <el-button @click="gotEthchain('192.168.0.74:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.9:8086')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -659,7 +659,7 @@
         IP号与端口号
       </template>
       192.168.0.10:8086
-        <el-button @click="gotEthchain('192.168.0.179:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.10:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -681,7 +681,7 @@
         IP号与端口号
       </template>
       192.168.0.11:8086
-        <el-button @click="gotEthchain('192.168.0.166:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.11:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -703,7 +703,7 @@
         IP号与端口号
       </template>
       192.168.0.12:8086
-        <el-button @click="gotEthchain('192.168.0.146:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.12:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -725,7 +725,7 @@
         IP号与端口号
       </template>
       192.168.0.13:8086
-        <el-button @click="gotEthchain('192.168.0.128:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.13:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -747,7 +747,7 @@
         IP号与端口号
       </template>
       192.168.0.14:8086
-        <el-button @click="gotEthchain('192.168.0.192:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.14:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -769,7 +769,7 @@
         IP号与端口号
       </template>
       192.168.0.15:8086
-        <el-button @click="gotEthchain('192.168.0.73:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.15:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -791,7 +791,7 @@
         IP号与端口号
       </template>
       192.168.0.16:8086
-        <el-button @click="gotEthchain('192.168.0.115:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.16:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -813,7 +813,7 @@
         IP号与端口号
       </template>
       192.168.0.17:8086
-        <el-button @click="gotEthchain('192.168.0.173:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.17:8086')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -836,7 +836,7 @@
         IP号与端口号
       </template>
       192.168.0.18:8086
-        <el-button @click="gotEthchain('192.168.0.93:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.18:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -858,7 +858,7 @@
         IP号与端口号
       </template>
       192.168.0.19:8086
-        <el-button @click="gotEthchain('192.168.0.32:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.19:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -880,7 +880,7 @@
         IP号与端口号
       </template>
       192.168.0.20:8086
-        <el-button @click="gotEthchain('192.168.0.34:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.20:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -902,7 +902,7 @@
         IP号与端口号
       </template>
       192.168.0.21:8086
-        <el-button @click="gotEthchain('192.168.0.119:10012')">跳转</el-button>
+        <el-button @click="gotEthchain('192.168.0.21:8086')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -948,7 +948,7 @@
         IP号与端口号
       </template>
       192.168.0.3:8087
-        <el-button @click="gotH2Chain('192.168.0.12:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.3:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -970,7 +970,7 @@
         IP号与端口号
       </template>
       192.168.0.4:8087
-        <el-button @click="gotH2Chain('192.168.0.218:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.4:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -992,7 +992,7 @@
         IP号与端口号
       </template>
       192.168.0.5:8087
-        <el-button @click="gotH2Chain('192.168.0.33:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.5:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1014,7 +1014,7 @@
         IP号与端口号
       </template>
       192.168.0.6:8087
-        <el-button @click="gotH2Chain('192.168.0.246:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.6:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1036,7 +1036,7 @@
         IP号与端口号
       </template>
       192.168.0.7:8087
-        <el-button @click="gotH2Chain('192.168.0.69:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.7:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1058,7 +1058,7 @@
         IP号与端口号
       </template>
       192.168.0.8:8087
-        <el-button @click="gotH2Chain('192.168.0.87:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.8:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1080,7 +1080,7 @@
         IP号与端口号
       </template>
       192.168.0.9:8087
-        <el-button @click="gotH2Chain('192.168.0.74:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.9:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1102,7 +1102,7 @@
         IP号与端口号
       </template>
       192.168.0.10:8087
-        <el-button @click="gotH2Chain('192.168.0.179:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.10:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1124,7 +1124,7 @@
         IP号与端口号
       </template>
       192.168.0.11:8087
-        <el-button @click="gotH2Chain('192.168.0.166:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.11:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1146,7 +1146,7 @@
         IP号与端口号
       </template>
       192.168.0.12:8087
-        <el-button @click="gotH2Chain('192.168.0.146:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.12:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1168,7 +1168,7 @@
         IP号与端口号
       </template>
       192.168.0.13:8087
-        <el-button @click="gotH2Chain('192.168.0.128:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.13:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1190,7 +1190,7 @@
         IP号与端口号
       </template>
       192.168.0.14:8087
-        <el-button @click="gotH2Chain('192.168.0.192:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.14:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1212,7 +1212,7 @@
         IP号与端口号
       </template>
       192.168.0.15:8087
-        <el-button @click="gotH2Chain('192.168.0.73:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.15:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1234,7 +1234,7 @@
         IP号与端口号
       </template>
       192.168.0.16:8087
-        <el-button @click="gotH2Chain('192.168.0.115:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.16:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1256,7 +1256,7 @@
         IP号与端口号
       </template>
       192.168.0.17:8087
-        <el-button @click="gotH2Chain('192.168.0.173:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.17:8087')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -1279,7 +1279,7 @@
         IP号与端口号
       </template>
       192.168.0.18:8087
-        <el-button @click="gotH2Chain('192.168.0.93:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.18:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1301,7 +1301,7 @@
         IP号与端口号
       </template>
       192.168.0.19:8087
-        <el-button @click="gotH2Chain('192.168.0.32:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.19:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1323,7 +1323,7 @@
         IP号与端口号
       </template>
       192.168.0.20:8087
-        <el-button @click="gotH2Chain('192.168.0.34:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.20:8087')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1345,7 +1345,7 @@
         IP号与端口号
       </template>
       192.168.0.21:8087
-        <el-button @click="gotH2Chain('192.168.0.119:8000')">跳转</el-button>
+        <el-button @click="gotH2Chain('192.168.0.21:8087')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -1391,7 +1391,7 @@
         IP号与端口号
       </template>
       192.168.0.3:8089
-      <el-button @click="gotBTchain('192.168.0.12:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.3:8089')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1415,7 +1415,7 @@
         IP号与端口号
       </template>
       192.168.0.4:8089
-      <el-button @click="gotBTchain('192.168.0.218:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.4:8089')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -1438,7 +1438,7 @@
         IP号与端口号
       </template>
       192.168.0.5:8089
-      <el-button @click="gotBTchain('192.168.0.33:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.5:8089')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1463,7 +1463,7 @@
         IP号与端口号
       </template>
       192.168.0.6:8089
-      <el-button @click="gotBTchain('192.168.0.246:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.6:8089')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1487,7 +1487,7 @@
         IP号与端口号
       </template>
       192.168.0.7:8089
-      <el-button @click="gotBTchain('192.168.0.69:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.7:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1509,7 +1509,7 @@
         IP号与端口号
       </template>
       192.168.0.8:8089
-      <el-button @click="gotBTchain('192.168.0.87:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.8:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1531,7 +1531,7 @@
         IP号与端口号
       </template>
       192.168.0.9:8089
-      <el-button @click="gotBTchain('192.168.0.74:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.9:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1553,7 +1553,7 @@
         IP号与端口号
       </template>
       192.168.0.10:8089
-      <el-button @click="gotBTchain('192.168.0.179:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.10:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1575,7 +1575,7 @@
         IP号与端口号
       </template>
       192.168.0.11:8089
-      <el-button @click="gotBTchain('192.168.0.166:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.11:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1597,7 +1597,7 @@
         IP号与端口号
       </template>
       192.168.0.12:8089
-      <el-button @click="gotBTchain('192.168.0.146:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.12:8089')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -1620,7 +1620,7 @@
         IP号与端口号
       </template>
       192.168.0.13:8089
-      <el-button @click="gotBTchain('192.168.0.128:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.13:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1642,7 +1642,7 @@
         IP号与端口号
       </template>
       192.168.0.14:8089
-      <el-button @click="gotBTchain('192.168.0.192:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.14:8089')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -1665,7 +1665,7 @@
         IP号与端口号
       </template>
       192.168.0.15:8089
-      <el-button @click="gotBTchain('192.168.0.73:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.15:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1687,7 +1687,7 @@
         IP号与端口号
       </template>
       192.168.0.16:8089
-      <el-button @click="gotBTchain('192.168.0.115:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.16:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1709,7 +1709,7 @@
         IP号与端口号
       </template>
       192.168.0.17:8089
-      <el-button @click="gotBTchain('192.168.0.173:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.17:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1731,7 +1731,7 @@
         IP号与端口号
       </template>
       192.168.0.18:8089
-      <el-button @click="gotBTchain('192.168.0.93:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.18:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1753,7 +1753,7 @@
         IP号与端口号
       </template>
       192.168.0.19:8089
-      <el-button @click="gotBTchain('192.168.0.32:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.19:8089')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1775,7 +1775,7 @@
         IP号与端口号
       </template>
       192.168.0.20:8089
-      <el-button @click="gotBTchain('192.168.0.34:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.20:8089')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1800,7 +1800,7 @@
         IP号与端口号
       </template>
       192.168.0.21:8089
-      <el-button @click="gotBTchain('192.168.0.119:1000')">跳转</el-button>
+      <el-button @click="gotBTchain('192.168.0.21:8089')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1825,7 +1825,7 @@
         IP号与端口号
       </template>
       192.168.0.2:8091
-      <el-button @click="gotfabchain('192.168.0.2:8090')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.2:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1847,7 +1847,7 @@
         IP号与端口号
       </template>
       192.168.0.3:8091
-      <el-button @click="gotfabchain('192.168.0.12:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.3:8091')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1871,7 +1871,7 @@
         IP号与端口号
       </template>
       192.168.0.4:8091
-      <el-button @click="gotfabchain('192.168.0.218:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.4:8091')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -1894,7 +1894,7 @@
         IP号与端口号
       </template>
       192.168.0.5:8091
-      <el-button @click="gotfabchain('192.168.0.33:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.5:8091')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1919,7 +1919,7 @@
         IP号与端口号
       </template>
       192.168.0.6:8091
-      <el-button @click="gotfabchain('192.168.0.246:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.6:8091')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -1943,7 +1943,7 @@
         IP号与端口号
       </template>
       192.168.0.7:8091
-      <el-button @click="gotfabchain('192.168.0.69:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.7:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1965,7 +1965,7 @@
         IP号与端口号
       </template>
       192.168.0.8:8091
-      <el-button @click="gotfabchain('192.168.0.87:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.8:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -1987,7 +1987,7 @@
         IP号与端口号
       </template>
       192.168.0.9:8091
-      <el-button @click="gotfabchain('192.168.0.74:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.9:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2009,7 +2009,7 @@
         IP号与端口号
       </template>
       192.168.0.10:8091
-      <el-button @click="gotfabchain('192.168.0.179:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.10:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2031,7 +2031,7 @@
         IP号与端口号
       </template>
       192.168.0.11:8091
-      <el-button @click="gotfabchain('192.168.0.166:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.11:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2053,7 +2053,7 @@
         IP号与端口号
       </template>
       192.168.0.12:8091
-      <el-button @click="gotfabchain('192.168.0.146:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.12:8091')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -2076,7 +2076,7 @@
         IP号与端口号
       </template>
       192.168.0.13:8091
-      <el-button @click="gotfabchain('192.168.0.128:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.13:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2098,7 +2098,7 @@
         IP号与端口号
       </template>
       192.168.0.14:8091
-      <el-button @click="gotfabchain('192.168.0.192:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.14:8091')">跳转</el-button>
     </el-descriptions-item>
 
     <el-descriptions-item>
@@ -2121,7 +2121,7 @@
         IP号与端口号
       </template>
       192.168.0.15:8091
-      <el-button @click="gotfabchain('192.168.0.73:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.15:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2143,7 +2143,7 @@
         IP号与端口号
       </template>
       192.168.0.16:8091
-      <el-button @click="gotfabchain('192.168.0.115:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.16:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2165,7 +2165,7 @@
         IP号与端口号
       </template>
       192.168.0.17:8091
-      <el-button @click="gotfabchain('192.168.0.173:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.17:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2187,7 +2187,7 @@
         IP号与端口号
       </template>
       192.168.0.18:8091
-      <el-button @click="gotfabchain('192.168.0.93:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.18:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2209,7 +2209,7 @@
         IP号与端口号
       </template>
       192.168.0.19:8091
-      <el-button @click="gotfabchain('192.168.0.32:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.19:8091')">跳转</el-button>
     </el-descriptions-item>
     <el-descriptions-item>
       <template #label>
@@ -2231,7 +2231,7 @@
         IP号与端口号
       </template>
       192.168.0.20:8091
-      <el-button @click="gotfabchain('192.168.0.34:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.20:8091')">跳转</el-button>
     </el-descriptions-item>
 
 
@@ -2256,7 +2256,7 @@
         IP号与端口号
       </template>
       192.168.0.21:8091
-      <el-button @click="gotfabchain('192.168.0.119:1000')">跳转</el-button>
+      <el-button @click="gotfabchain('192.168.0.21:8091')">跳转</el-button>
     </el-descriptions-item>
 
 

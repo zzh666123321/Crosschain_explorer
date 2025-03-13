@@ -4,7 +4,7 @@
 
         <template #bodyCell="{ column, text }">
 
-            <template v-if="column.dataIndex === 'blockHeight'">
+            <template v-if="column.dataIndex === 'number'">
 
                 <router-link :to="{path:`/${from}/${text}`,query:{chainIP: data1}}">{{ text }}</router-link>
 

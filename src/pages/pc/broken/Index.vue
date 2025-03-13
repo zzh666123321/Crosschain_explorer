@@ -165,7 +165,7 @@ const openFullScreen1 = () => {
 
   const relayIp = "192.168.100"
 
-  router.push({path:'/crossTX', query: {srcChainType: srcChainType,dstChainType: dstChainType,src:src,dst:dst,relayIp: relayIp}});
+  router.push({path:'/crossTX', query: {srcChainType: srcChainType,dstChainType: dstChainType,srcIp:src,dstIp:dst,relayIp: relayIp}});
 //   router.push({path:'/crossTX', query: {
 //     "dstChainType": "ethereum",
 //    "dstIp": "192.168.0.2",

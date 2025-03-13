@@ -42,9 +42,9 @@ export const columnsBTChain = [
 ];
 
 export const columnsFabric = [
-    { title: '高度', dataIndex: 'blockHeight', width: 80 , className: "text"},
-    { title: '区块哈希', dataIndex: 'blockHash', width: 300, className: "text" },
-    { title: '时间戳', dataIndex: 'timeStamp', width: 200, className: "text" },
-    { title: '前块哈希', dataIndex: 'previousBlockHash', width: 300, className: "text" },
-    { title: '公钥', dataIndex: 'signerPubkey', ellipsis: true, className: "text" }
+    { title: '高度', dataIndex: 'number', width: 80 , className: "text"},
+    { title: '区块哈希', dataIndex: 'hash', width: 300, className: "text" },
+    { title: '时间戳', dataIndex: 'createdAt', width: 200, className: "text" },
+    { title: '前块哈希', dataIndex: 'previousHash', width: 300, className: "text" },
+    { title: '数据哈希', dataIndex: 'dataHash', ellipsis: true, className: "text" }
 ];
