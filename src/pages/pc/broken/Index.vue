@@ -114,7 +114,22 @@ let stepClassObj = computed((val) => {
 });
 const { stepTitle, stepSuc } = toRefs(stepData);
 const stepSubmitHandle = () => {
-  console.log(resource.value)
+  
+  console.log(resource.value[0])
+  console.log(target.value[0])
+  console.log(resource.value[1])
+  console.log(target.value[1])
+  console.log(resource.value[2])
+  console.log(target.value[2])
+
+  const str = String(resource.value[2])
+  const match = str.match(/^([^:]+):/)
+  console.log(match[1])
+
+  const str2 = String(target.value[2])
+  const match2 = str2.match(/^([^:]+):/)
+  console.log(match2[1])
+
   if (++active.value > 3) {
     // console.log(this.value)
     //router.push('/crossend');
@@ -134,14 +149,30 @@ const openFullScreen1 = () => {
   console.log(target.value[1])
   console.log(resource.value[2])
   console.log(target.value[2])
-  // router.push({path:'/crossTX', query: {srcChainType: String(resource.value[0]),dstChainType: String(target.value[0]),src:String(resource.value[2]),dst:String(target.value[2]) }});
-  router.push({path:'/crossTX', query: {
-    "dstChainType": "ethereum",
-   "dstIp": "192.168.0.2",
-   "relayIp": "192.168.100",
-   "srcChainType": "h2chain",
-   "srcIp": "192.168.0.2"
-  }});
+
+  const srcChainType = String(resource.value[0])
+  const dstChainType = String(target.value[0])
+
+  const str = String(resource.value[2])
+  const match = str.match(/^([^:]+):/)
+  console.log(match[1])
+  const src = String(match[1])
+
+  const str2 = String(target.value[2])
+  const match2 = str2.match(/^([^:]+):/)
+  console.log(match2[1])
+  const dst = String(match2[1])
+
+  const relayIp = "192.168.100"
+
+  router.push({path:'/crossTX', query: {srcChainType: srcChainType,dstChainType: dstChainType,src:src,dst:dst,relayIp: relayIp}});
+//   router.push({path:'/crossTX', query: {
+//     "dstChainType": "ethereum",
+//    "dstIp": "192.168.0.2",
+//    "relayIp": "192.168.100",
+//    "srcChainType": "h2chain",
+//    "srcIp": "192.168.0.2"
+//   }});
 };
 
 
@@ -400,7 +431,7 @@ export default {
             }]
           }]
       }, {
-        value: 'eth',
+        value: 'ethereum',
         label: '以太坊',
         children: [{
           value: '21',
@@ -694,7 +725,7 @@ export default {
             }]
           }]
       },{
-        value: 'h2chain',
+        value: 'UniComchain',
         label: '联通链',
         children: [{
           value: '61',
@@ -841,7 +872,7 @@ export default {
             }]
           }]},
         {
-          value: 'h2chain',
+          value: 'bubi',
           label: '布比链',
           children: [{
             value: '81',

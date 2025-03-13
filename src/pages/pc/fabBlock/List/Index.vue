@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-import BlockTable from "@/components/tables/BlockTableH2Chain.vue";
+import BlockTable from "@/components/tables/BlockTableFabric.vue";
 import { useBlockList } from "@/composition/useMock";
 import Title from "@/components/Title.vue";
 import { reactive } from "vue";
